@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- HTML Meta Tags -->
+    <title>DC Cooking - Recetas de comidas riquísimas</title>
+    <meta name="description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://nicodc96.github.io/cac-recetario/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DC Cooking - Recetas de comidas riquísimas">
+    <meta property="og:description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
+    <meta property="og:image" content="https://i.ibb.co/gWc9LH9/dccooking.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="nicodc96.github.io">
+    <meta property="twitter:url" content="https://nicodc96.github.io/cac-recetario/">
+    <meta name="twitter:title" content="DC Cooking - Recetas de comidas riquísimas">
+    <meta name="twitter:description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
+    <meta name="twitter:image" content="https://i.ibb.co/gWc9LH9/dccooking.jpg">
+
+    <!-- CSS Link Import -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="shortcut icon" href="../assets/oven.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section id="header-image">
+            <h1>DCCooking</h1>
+        </section>
+        <nav class="navbar navbar-expand-lg bg-orange">
+            <section class="d-flex w-100 justify-content-evenly gap-10 me-5">
+                <div id="container-navlogo">
+                    <a href="./index.html">
+                        <img src="../assets/oven.svg" alt="logo-olla" width="35px" height="40px" />
+                        <p class="text-molendra">DC Cooking</p>
+                    </a>
+                </div>
+                <div id="contenedor-textmenu">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-molendra text-active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link text-molendra" href="./recetas.html">Recetas</a>
+                        <a class="nav-link text-molendra" href="#">Acerca de</a>
+                        <a class="nav-link text-molendra" href="./contacto.html">Contacto</a>
+                      </div>
+                </div>
+                <div id="contenedor-svglogo">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4b4b4b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </div>
+            </section>
+        </nav>
+        <section class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="menu-offcanvas-label">
+            <div class="offcanvas-header bg-orange">
+                <h5 class="text-molendra text-white">Navegacion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Búsqueda..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <section id="offcanvas-buttons">
+                    <button type="button" id="offcBtnInicioC" class="btn-98">Inicio</button>
+                    <button type="button" id="offcBtnRecetasC" class="btn-98">Recetas</button>
+                    <button type="button" id="offcBtnAcercaDeC" class="btn-98">Acerca de</button>
+                    <button type="button" id="offcBtnContactoC" class="btn-98">Contacto</button>
+                </section>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="contenedorContacto">
+            <article id="contenedorContactoImg">
+                <img src="../assets/contact-us.jpg" alt="contactanos" id="imgContactanos">
+            </article>
+            <article id="contenedorContactoForm">
+                <h2 class="text-pacifico text-center">¿Tienes alguna duda o sugerencia?</h2>
+                <form id="formContacto">
+                    <div class="row">
+                        <div class="col-6 inputs">
+                            <input type="text" name="form-name" id="inputFormName" class="form-control input-custom" required>
+                            <label for="inputFormName" class="floatlabel">Ingrese su nombre</label>
+                        </div>
+                        <div class="col-6 inputs">
+                            <input type="text" name="form-email" id="inputFormEmail" class="form-control input-custom" required>
+                            <label for="inputFormEmail" class="floatlabel">Ingrese su email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea name="formTextArea" id="inputTextArea" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
+                        </div>
+                    </div>
+                    <div id="contenedorFormBoton">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section id="contenedor-footer" class="bg-orange">
+            <div class="row w-100">
+                <div class="col-4">
+                    <div id="container-logofooter">
+                        <a href="./index.html">
+                            <img src="../assets/oven.svg" alt="logo-olla" width="35px" height="40px" />
+                            <p class="text-molendra">DC Cooking</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <section class="social-media-buttons">
+                        <article class="social-media-button icon-ig">
+                            <img src="../assets/instagram.svg" alt="Instagram">
+                        </article>
+                        <article class="social-media-button icon-tw">
+                            <img src="../assets/twitter.svg" alt="Twitter">
+                        </article>
+                        <article class="social-media-button icon-git">
+                            <a href="https://github.com/Nicodc96" target="_blank" rel="norefferer nofollow">
+                                <img src="../assets/github-white.svg" alt="Github">
+                            </a>
+                        </article>
+                        <article class="social-media-button icon-lki">
+                            <a href="https://www.linkedin.com/in/lautarondiaz" target="_blank" rel="norefferer nofollow">
+                                <img src="../assets/linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12">
+                    <p class="fw-semibold">DC Cooking es una página desarrollada con fines educativos</p>
+                    <p class="fw-semibold">Usted es libre de tomar, de manera directa o indirecta, el contenido de esta página para uso personal y/o comercial</p>
+                </div>
+            </div>
+            <div id="footer-nombre">
+                <p class="fw-semibold fst-italic fs-4">2023 &copy; <span class="text-balleny">Nicolás Díaz</span></p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="../js/contacto.js" type="module"></script>
+</body>
+</html>

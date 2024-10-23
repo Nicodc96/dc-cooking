@@ -1,0 +1,501 @@
+/* ----- Estilos generales ----- */
+@import url('https://fonts.cdnfonts.com/css/hastro');
+@import url('https://fonts.cdnfonts.com/css/molendra');
+@import url('https://fonts.cdnfonts.com/css/pacifico');
+@import url('https://fonts.cdnfonts.com/css/balleny');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #2C2C2C;
+    --linkedin: #0A66C2;
+    --github: #ebebeb;
+    --twitter: #1D9BF0;
+}
+.bg-orange{
+    background-color: rgb(255, 160, 44);
+}
+.gap-10{
+    gap: 10vw;
+}
+.text-disabled{
+    font-weight: 100;
+    color: rgb(77, 77, 77)!important;
+}
+.text-disabled:hover{
+    background-color: transparent!important;
+}
+.text-active{
+    font-weight: 500;
+    color: rgb(235, 235, 235);
+}
+.text-molendra{
+    font-family: 'Molendra', sans-serif;
+}
+.text-pacifico{
+    font-family: 'Pacifico', sans-serif;
+}
+.text-balleny{
+    font-family: 'Balleny', sans-serif;
+}
+.content{
+    padding: 30px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+.width-95{
+    width: 95%!important;
+}
+.img-steps-recipe:hover{
+    cursor: pointer;
+}
+.toggleZIndex{
+    z-index: 1050;
+}
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000000;
+    opacity:0.5;
+    border-radius:30px;
+}
+/* ----- Header ----- */
+#header-image{
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/bg-header.jpg");
+    background-size: 100%;
+    background-position-y: 5%;
+    background-repeat: no-repeat;
+}
+#header-image > h1{
+    color: white;
+    position: absolute;
+    top: 115px;
+    left: 125px;
+    font-family: 'Hastro', sans-serif;
+    font-size: 64px;
+}
+#container-navlogo > a{
+    display: flex;
+    gap: 0.5vw;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+#container-navlogo > a:link{
+    text-decoration: none;
+}
+#container-navlogo p{
+    margin-bottom: 0;
+    padding-top: 8px;
+    font-size: 19px;
+}
+#contenedor-textmenu .nav-link{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+#contenedor-textmenu .nav-link:hover,
+#container-navlogo p:hover{
+    color: #272727;
+}
+#contenedor-svglogo > svg,
+#container-navlogo p{
+    border-radius: 8px;
+    transition: all 0.45s;
+}
+#contenedor-svglogo > svg:hover{
+    cursor: pointer;
+    background-color: rgb(221, 139, 38);
+    stroke: black;
+}
+.offcanvas-body{
+    padding-top: 180px;
+    padding-right: 6vw;
+    background-image: url("../assets/food-bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(231, 143, 36);
+    font-weight: 600;
+    font-size: 18px;
+}
+.offcanvas-body form {
+    margin-bottom: 18px;
+}
+#offcanvas-buttons{
+    margin-left: 0.25vw;
+}
+.btn-98 {
+    background-image: none;
+    margin-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: rgb(231, 143, 36);
+    border-bottom: 3px solid rgb(255, 174, 74);
+    --thickness: 3px;
+    box-sizing: border-box;
+    background: none;
+    -webkit-clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% + var(--thickness)),
+        0 calc(100% + var(--thickness))
+    );
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% + var(--thickness)),
+        0 calc(100% + var(--thickness))
+    );
+    display: block;
+    font-weight: 900;
+    padding: 2px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.btn-98:before {
+    background: white;
+    bottom: calc(var(--thickness) * -1);
+    content: "";
+    display: block;
+    height: var(--thickness);
+    position: absolute;
+    width: 100%;
+}
+.btn-98:hover:before {
+    -webkit-animation: slide 0.5s ease;
+    animation: slide 0.5s ease;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    51% {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* ----- Main ----- */
+body{
+    background-image: url("../assets/background-repeat.jpg");
+    background-repeat: repeat;
+    background-size: 650px;
+}
+#imagen-principal{
+    display: flex;
+    justify-content: center;
+}
+#imagen-principal > img{
+    width: 65vw;
+}
+#main-carrousel > h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 55px;
+    color: #DA2B1F;
+}
+#contenedor-carrousel,
+#imagen-principal,
+#main-video{
+    margin: 35px 0px 35px 0px;
+}
+.carousel-item > img{
+    filter: brightness(45%);
+}
+.comida-veg,
+.comida-ita,
+.comida-arg,
+.comida-fran{
+    border-radius: 5px;
+    height: 500px;
+}
+#contenedor-quecocinar-titulo{
+    gap: 20px;
+}
+#main-quecocinar-cards{
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+}
+#main-quecocinar-cards > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 60vw;
+}
+#main-quecocinar-cards .card{
+    width: 13vw;
+    transition: all 0.35s;
+}
+#main-quecocinar-cards .card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#main-quecocinar-cards .card-img-top{
+    width: 13vw;
+    height: 200px;
+}
+#main-quecocinar-cards .card > .card-body{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+#main-quecocinar-cards .card > .card-body h5{
+    font-size: 15px;
+}
+#main-video > h3{
+    text-align: center;
+    margin-bottom: 35px;
+    color: #DA2B1F;
+}
+#main-video iframe{
+    width:670px;
+    height:375px;
+    border: 4px solid #252525;
+    border-radius: 8px;
+}
+/* ----- Footer ----- */
+#contenedor-footer{
+    height: 300px;
+    padding-top: 50px;
+}
+#container-logofooter > a{
+    display: flex;
+    gap: 0.5vw;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+#container-logofooter > a:link{
+    text-decoration: none;
+}
+#container-logofooter p{
+    margin-bottom: 0;
+    padding-top: 8px;
+    border-radius: 8px;
+    transition: all 0.45s;
+    font-size: 24px;
+}
+#container-logofooter p:hover,
+#footer-nombre .text-balleny:hover{
+    color: #272727;
+}
+#contenedor-footer .col-4{
+    display: flex;
+    justify-content: center;
+}
+.social-media-buttons{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-right: 5vw;
+}
+.social-media-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+}
+.social-media-button:hover {
+    outline-offset: 3px;
+    transition: all 0.3s;
+}
+.social-media-button img {
+    transition: all 0.3s;
+}
+.social-media-button:hover img {
+    transform: scale(1.15);
+}
+.social-media-button:hover:nth-child(1) {
+    background:  radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+.social-media-button:hover:nth-child(2) {
+    background-color: var(--twitter);
+}
+.social-media-button:hover:nth-child(3) {
+    background-color: var(--background);
+}
+.social-media-button:hover:nth-child(4) {
+    background-color: var(--linkedin);
+}
+.icon-git img{
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+}
+#contenedor-footer .col-12{
+    padding-left: 11vw;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.col-12 p:nth-child(2){
+    margin-top: 20px;
+}
+#footer-nombre{
+    display: flex;
+    justify-content: end;
+    padding-right: 5vw;
+}
+#footer-nombre > p{
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+#footer-nombre .text-balleny{
+    transition: all 0.45s;    
+}
+/* ----- Recetas ----- */
+#contenedor-main h2{
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    color: #DA2B1F;
+}
+.divisor{
+    width: 17vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cfcfcf;
+  }
+#buscadorContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+#buscadorInput{
+    height: 35px;
+    width: 12vw;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+#containerControlsCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 325px;
+    margin-left: 2vw;
+    padding: 2vw 40px 2vw 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #adadad;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+#contenedorPaginacion{
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    gap: 10vw;
+    justify-content: center;
+}
+#contenedorCardsR .card{
+    width: 15vw;
+    height: 325px;
+    transition: all 0.45s;
+}
+#contenedorCardsR .card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#contenedorCardsR .card-img-top{
+    width: 14.9vw;
+    height: 225px;
+}
+#contenedorCardsR .card-body{
+    text-align: center;
+    padding-top: 5px;
+}
+#contenedorCardsR .card-body h5{
+    font-size: 18px;
+}
+/* ----- Contacto ----- */
+#contenedorContacto{
+    margin: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+#imgContactanos{
+    width: 600px;
+    border-radius: 8px;
+}
+#contenedorContactoForm{
+    padding: 20px;
+    width: 50vw;
+}
+#contenedorContactoForm > h2{
+    color: #DA2B1F;
+}
+#formContacto{
+    margin-top: 40px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px 7px rgba(26, 26, 26, 0.35);
+    border-radius: 8px;
+    height: 380px;
+}
+.inputs{
+    position: relative;
+    height: 80px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.input-custom{
+    position: absolute;
+    width: 20.5vw;
+    margin: 0 10px;
+    transition: 0.1s ease;
+    outline: none;
+}
+.floatlabel{
+    position: absolute;
+    font-size: 1.05em;
+    margin-top: 2px;
+    margin-left: 30px;
+    color: rgb(92, 92, 92);
+    cursor: text;
+    transition: 0.2s ease;
+    border-radius: 5px;
+}
+.input-custom:focus + .floatlabel,
+.input-custom:valid + .floatlabel{
+    transform: translate(-15px, -22px) scale(0.9);
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--bs-primary);
+    z-index: 2000;
+}
+#contenedorFormBoton{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}

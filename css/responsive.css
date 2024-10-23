@@ -1,0 +1,591 @@
+/* -------- index -------- */
+@media screen and (max-width:1335px) {
+    .col-12 p{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1255px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 16vw;
+    }
+}
+@media screen and (max-width:1255px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 18vw;
+    }
+}
+@media screen and (max-width:991px) {
+    #contenedor-textmenu .nav-link{
+        display: none;
+    }
+    #main-quecocinar-cards > div{
+        max-width: 100%;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 19vw;
+    }
+    #imagen-principal > img{
+        width: 70vw;
+    }
+    #main-carrousel > h2{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:900px){
+    .offcanvas-body{
+        padding-top: 215px;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 22vw;
+    }
+    #imagen-principal > img{
+        width: 75vw;
+    }
+    #main-carrousel > h2{
+        font-size: 45px;
+    }
+    .col-12 p{
+        width: 80%;
+    }
+    #footer-nombre{
+        justify-content: center;
+        margin-top: 15px;
+        padding-right: 0;
+    }    
+}
+@media screen and (max-width:800px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 22vw;
+    }
+    #imagen-principal > img{
+        width: 80vw;
+    }
+    #main-carrousel > h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .d-none{
+        display: block!important;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 400px;
+    }
+    #contenedor-footer .col-4{
+        padding-left: 2vw;
+        width: 50%;
+    }
+    #contenedor-footer .col-8{
+        width: 50%;
+    }
+}
+@media screen and (max-width:750px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 25vw;
+    }
+}
+@media screen and (max-width:672px) {
+    #header-image{
+        background-size: 100% 400px;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 28vw;
+    }
+    #imagen-principal > img{
+        width: 85vw;
+    }
+    #main-carrousel > h2{
+        font-size: 37px;
+    }
+    #main-video iframe{
+        width:580px;
+        height:305px;
+    }
+    #contenedor-footer{
+        height: 350px;
+    }
+    #container-logofooter p{
+        margin-bottom: 20px;
+    }
+    #contenedor-footer .col-8,
+    #contenedor-footer .col-4{
+        display: flex;
+        justify-content: center;
+        width: 94%;
+        margin-left: 7vw;
+    }
+    .social-media-buttons{
+        margin-right: 0;
+    }
+    .col-12 p{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:610px){
+    #header-image > h1{
+        font-size: 50px;
+        top: 135px;
+        left: 80px;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 350px;
+    }
+    #contenedor-quecocinar-titulo{
+        margin-left: 20vw;
+    }
+    #contenedor-texto-main-quecocinar > p{
+        width: 70%;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 30vw;
+    }
+}
+@media screen and (max-width:530px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 34vw;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 300px;
+    }
+    #contenedor-quecocinar-titulo{
+        margin-left: 15vw;
+    }
+    #main-quecocinar-cards > div{
+        max-width: 80vw;
+    }
+    #main-carrousel > h2{
+        font-size: 33px;
+    }
+}
+@media screen and (max-width:518px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 36vw;
+    }
+    #contenedor-footer{
+        height: 400px;
+    }
+}
+@media screen and (max-width:460px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 38vw;
+    }
+    #header-image > h1{
+        font-size: 46px;
+        top: 135px;
+        left: 50px;
+    }
+}
+@media screen and (max-width:415px){
+    #main-quecocinar-cards > div{
+        max-width: 80vw;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 50vw;
+    }
+    #contenedor-quecocinar-titulo{
+        margin-left: 7vw;
+    }
+    #contenedor-texto-main-quecocinar > p{
+        width: 100%;
+    }
+}
+@media screen and (max-width:390px){
+    #header-image > h1{
+        font-size: 30px;
+        top: 100px;
+        left: 35px;
+    }
+    #header-image{
+        height: 200px;
+    }        
+}
+@media screen and (max-width:305px){
+    #main-carrousel > h2{
+        font-size: 25px;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 200px;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 65vw;
+    }
+    .social-media-button{
+        width: 32px;
+        height: 32px;
+    }
+    .icon-git img{
+        width: 28px;
+        height: 28px;
+    }
+    #contenedor-footer{
+        height: 440px;
+    }
+    #main-video iframe{
+        width: 275px;
+        height: 275px;
+        
+    }
+}
+/* -------- recetas -------- */
+@media screen and (max-width:1300px) {
+    #colControlCards{
+        width: 30%;
+    }
+    #contenedorCardsR{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1200px) {
+    #colControlCards,
+    #contenedorPaginacionRelleno{
+        width: 35%;
+    }
+    #contenedorCardsR,
+    #contenedorPaginacion{
+        width: 65%;
+    }
+    #contenedorCardsR .card{
+        height: 300px;
+    }
+    #contenedorCardsR .card-img-top{
+        height: 200px;
+    }
+}
+@media screen and (max-width:1100px) {
+    #contenedorCardsR .card{
+        width: 18vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 17.9vw;
+    }
+}
+
+@media screen and (max-width:990px){
+    #modalReceta2 .img-top-modal{
+        width: 450px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:910px){
+    #colControlCards,
+    #contenedorCardsR,
+    #contenedorPaginacion{
+        width: 100%;
+        margin-left: 5vw;
+    }
+    #contenedorPaginacionRelleno{
+        width: 0%;
+    }
+    #contenedorCardsR,
+    #contenedorPaginacion{
+        margin-left: 6vw;
+    }
+    #colControlCards{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    #containerControlsCards{
+        width: 50vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 30vw;
+    }
+    #contenedorCardsR .card{
+        width: 25vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 24.9vw;
+    }
+}
+@media screen and (max-width:800px){
+    #contenedorCardsR .card{
+        width: 28vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 27.9vw;
+    }
+}
+@media screen and (max-width:635px) {
+    #contenedorCardsR .card{
+        width: 30vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 29.9vw;
+    }
+}
+@media screen and (max-width:600px){
+    #containerControlsCards{
+        width: 60vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 40vw;
+    }
+    #contenedorCardsR{
+        width: 60%;
+        margin-left: 24vw;
+    }
+    #contenedorCardsR .card{
+        width: 35vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 34.9vw;
+    }
+}
+@media screen and (max-width:530px){
+    #contenedorCardsR .card{
+        width: 40vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 39.9vw;
+    }
+}
+@media screen and (max-width:500px){
+    #contenedorPaginacion > *{
+        height: 40px;
+        font-size: 14px;
+    }
+    #modalReceta1 .img-top-modal{
+        height: 400px;
+        width: 400px;
+    }
+    #modalReceta2 .img-top-modal{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:454px){
+    #contenedor-main h2{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    #containerControlsCards{
+        width: 70vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 50vw;
+    }
+    #contenedorPaginacion{
+        gap: 6vw;
+    }
+    #contenedorCardsR .card{
+        width: 45vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 44.9vw;
+    }
+}
+@media screen and (max-width:415px){
+    #contenedorPaginacion{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #modalReceta1 .img-top-modal{
+        height: 350px;
+        width: 350px;
+    }
+    #modalReceta2 .img-top-modal{
+        height: 200px;
+        width: 350px;
+    }
+}
+@media screen and (max-width:360px){
+    #containerControlsCards{
+        width: 80vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 60vw;
+    }
+    #contenedorCardsR .card{
+        width: 52vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: calc(52vw - 2.2vw);
+    }
+    #modalReceta1 .img-top-modal{
+        height: 300px;
+        width: 300px;
+    }
+    #modalReceta2 .img-top-modal{
+        width: 300px;
+    }
+    .container-img-pasos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:300px){
+    #containerControlsCards{
+        width: 90vw;
+    }
+    #containerControlsCards > *{
+        width: 70vw;
+    }
+    #buscadorInput{
+        width: 60vw;
+    }
+    #contenedorCardsR .card{
+        width: 65vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: calc(64.5vw);
+    }
+    #contenedorCardsR{
+        width: 100%;
+        margin-left: 7vw;
+    }
+    #modalReceta1 .img-top-modal{
+        height: 270px;
+        width: 270px;
+    }
+    #modalReceta2 .img-top-modal{
+        width: 250px;
+    }
+}
+/* -------- contacto -------- */
+@media screen and (max-width:1250px) {
+    #contenedorContactoForm{
+        width: 70vw;
+    }
+    .input-custom{
+        width: 29.5vw;
+    }
+}
+@media screen and (max-width:991px) {
+    #contenedorContactoForm{
+        width: 85vw;
+    }
+    .input-custom{
+        width: 35.5vw;
+    }
+    #imgContactanos{
+        width: 500px;
+    }
+}
+@media screen and (max-width:850px) {
+    .input-custom{
+        width: 33.5vw;
+    }
+}
+@media screen and (max-width:750px) {
+    .input-custom{
+        width: 31.5vw;
+    }
+}
+@media screen and (max-width:660px) {
+    .input-custom{
+        width: 29.5vw;
+    }
+}
+@media screen and (max-width:600px) {
+    #contenedorContacto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contenedorContacto{
+        width: 100vw;
+    }
+    #contenedorContactoForm{
+        width: 90vw;
+    }
+    .input-custom{
+        width: 33vw;
+    }
+    .floatlabel,
+    #inputTextArea{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:550px) {
+    #formContacto{
+        height: 420px;
+    }
+    .inputs{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    #inputTextArea{
+        margin-top: 10px;
+    }
+    .input-custom{
+        width: 74vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .input-custom{
+        width: 72vw;
+    }
+    #imgContactanos{
+        width: 400px;
+    }
+}
+@media screen and (max-width:440px) {
+    #imgContactanos{
+        width: 375px;
+    }
+    .input-custom{
+        width: 70vw;
+    }
+}
+@media screen and (max-width:400px) {
+    #contenedorContacto{
+        gap: 0;
+    }
+    #imgContactanos{
+        width: 325px;
+    }
+    #contenedorContactoForm{
+        width: 100vw;
+    }
+    #formContacto{
+        width: 90vw;
+    }
+    .input-custom{
+        width: 78vw;
+    }
+}
+@media screen and (max-width:350px) {
+    .input-custom{
+        width: 75vw;
+    }
+    #imgContactanos{
+        width: 300px;
+    }
+}
+@media screen and (max-width:300px) {
+    #imgContactanos{
+        width: 280px;
+    }
+}

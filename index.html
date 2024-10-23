@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- HTML Meta Tags -->
+        <title>DC Cooking - Recetas de comidas riquísimas</title>
+        <meta name="description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://nicodc96.github.io/cac-recetario/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="DC Cooking - Recetas de comidas riquísimas">
+        <meta property="og:description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
+        <meta property="og:image" content="https://i.ibb.co/gWc9LH9/dccooking.jpg">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="nicodc96.github.io">
+        <meta property="twitter:url" content="https://nicodc96.github.io/cac-recetario/">
+        <meta name="twitter:title" content="DC Cooking - Recetas de comidas riquísimas">
+        <meta name="twitter:description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
+        <meta name="twitter:image" content="https://i.ibb.co/gWc9LH9/dccooking.jpg">
+
+        <!-- CSS Link Import -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="shortcut icon" href="./assets/oven.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <section id="header-image">
+                <h1>DCCooking</h1>
+            </section>
+            <nav class="navbar navbar-expand-lg bg-orange">
+                <section class="d-flex w-100 justify-content-evenly gap-10 me-5">
+                    <div id="container-navlogo">
+                        <a href="./index.html">
+                            <img src="./assets/oven.svg" alt="logo-olla" width="35px" height="40px" />
+                            <p class="text-molendra">DC Cooking</p>
+                        </a>
+                    </div>
+                    <div id="contenedor-textmenu">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-molendra text-active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link text-molendra" href="./pages/recetas.html">Recetas</a>
+                            <a class="nav-link text-molendra" href="#">Acerca de</a>
+                            <a class="nav-link text-molendra" href="./pages/contacto.html">Contacto</a>
+                          </div>
+                    </div>
+                    <div id="contenedor-svglogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4b4b4b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </div>
+                </section>
+            </nav>
+            <section class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="menu-offcanvas-label">
+                <div class="offcanvas-header bg-orange">
+                    <h5 class="text-molendra text-white">Navegacion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Búsqueda..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <section id="offcanvas-buttons">
+                        <button type="button" id="offcBtnInicio" class="btn-98">Inicio</button>
+                        <button type="button" id="offcBtnRecetas" class="btn-98">Recetas</button>
+                        <button type="button" id="offcBtnAcercaDe" class="btn-98">Acerca de</button>
+                        <button type="button" id="offcBtnContacto" class="btn-98">Contacto</button>
+                    </section>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="imagen-principal">
+                <img src="./assets/cocina-1.jpg" alt="cocina e ingredientes">
+            </section>
+            <section id="main-carrousel">
+                <h2 class="text-pacifico">Las recetas mas ricas y fáciles</h2>
+                <section id="contenedor-carrousel">
+                    <div id="carousel-comidas" class="carousel slide" data-bs-ride="carousel">
+                        <section class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </section>
+                        <section class="carousel-inner">
+                          <article class="carousel-item active">
+                              <img src="./assets/comida-italiana.jpg" class="d-block w-100 comida-ita" alt="comida italiana">                            
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Recetas Italianas</h5>
+                                <p>Desde Milán, Roma, Venecia y Nápoles. ¡Las mejores recetas de la Bel Paese!</p>                              
+                            </div>
+                          </article>
+                          <article class="carousel-item">
+                            <img src="./assets/comida-vegetariana.jpg" class="d-block w-100 comida-veg" alt="comida vegetariana">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Recetas Vegetarianas</h5>
+                                <p>Aquí encontraras las más sanas comidas veganas y vegetarianas.</p>
+                            </div>
+                          </article>
+                          <article class="carousel-item">
+                            <img src="./assets/comidas-argentinas.jpg" class="d-block w-100 comida-arg" alt="comida argentina">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>De Argentina al mundo</h5>
+                                <p>¿Has probado las empanadas, el asado o tal vez un choripan? Prueba los mejores platillos del país campeón del mundo.</p>
+                            </div>
+                          </article>
+                          <article class="carousel-item">
+                            <img src="./assets/comida-francesa.jpg" class="d-block w-100 comida-fran" alt="comida francesa">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Avez-vous goûté les meilleurs plats de France?</h5>
+                                <p>Más allá de los crepes y el foie, Francia tiene una de las cocinas más ricas del mundo. Descubre qué platos no deberías perderte si viajas a tierras galas.</p>
+                            </div>
+                          </article>
+                        </section>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-comidas" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-comidas" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                </section>
+            </section>
+            <section id="main-quecocinar">
+                <div class="d-flex justify-content-center" id="contenedor-quecocinar-titulo">
+                    <img src="./assets/burbuja-cubiertos.svg" alt="logo-cubiertos-burbuja">
+                    <div id="contenedor-texto-main-quecocinar">
+                        <h2 class="text-pacifico">¿Pensando en qué cocinar?</h2>
+                        <p>Prueba estas combinaciones más populares de comidas <span class="fw-semibold">ricas y fáciles</span></p>
+                    </div>
+                </div>
+                <section id="main-quecocinar-cards">
+                    <div>
+                        <article class="card">
+                            <img src="./assets/comidas-alaolla.jpg" class="card-img-top" alt="comidas a la olla">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas a la olla</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-concarne.jpg" class="card-img-top" alt="comidas con carne">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas con carne</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-alhorno.jpg" class="card-img-top" alt="comidas al horno">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas al horno</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-concrema.jpg" class="card-img-top" alt="comidas con crema">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas con crema</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-conarroz.jpg" class="card-img-top" alt="comidas con arroz">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas con arroz</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-conpasta.jpg" class="card-img-top" alt="comidas con pasta">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas con pasta</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-conzapallo.jpg" class="card-img-top" alt="comidas con zapallo">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas con zapallo</h5>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./assets/comidas-conpapas.jpg" class="card-img-top" alt="comidas con papas">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <h5 class="card-title">Recetas con papas</h5>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+            <section id="main-video">
+                <h3 class="text-pacifico">¿Qué esperás para probar deliciosas comidas como esta?</h3>
+                <div class="d-flex justify-content-center">
+                    <iframe src="https://www.youtube.com/embed/ht13rSe4_Go?si=WuQXcXPywCc1vNaz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="contenedor-footer" class="bg-orange">
+                <div class="row w-100">
+                    <div class="col-4">
+                        <div id="container-logofooter">
+                            <a href="./index.html">
+                                <img src="./assets/oven.svg" alt="logo-olla" width="35px" height="40px" />
+                                <p class="text-molendra">DC Cooking</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <section class="social-media-buttons">
+                            <article class="social-media-button icon-ig">
+                                <img src="./assets/instagram.svg" alt="Instagram">
+                            </article>
+                            <article class="social-media-button icon-tw">
+                                <img src="./assets/twitter.svg" alt="Twitter">
+                            </article>
+                            <article class="social-media-button icon-git">
+                                <a href="https://github.com/Nicodc96" target="_blank" rel="norefferer nofollow">
+                                    <img src="./assets/github-white.svg" alt="Github">
+                                </a>
+                            </article>
+                            <article class="social-media-button icon-lki">
+                                <a href="https://www.linkedin.com/in/lautarondiaz" target="_blank" rel="norefferer nofollow">
+                                    <img src="./assets/linkedin.svg" alt="LinkedIn">
+                                </a>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col-12">
+                        <p class="fw-semibold">DC Cooking es una página desarrollada con fines educativos</p>
+                        <p class="fw-semibold">Usted es libre de tomar, de manera directa o indirecta, el contenido de esta página para uso personal y/o comercial</p>
+                    </div>
+                </div>
+                <div id="footer-nombre">
+                    <p class="fw-semibold fs-4">2024 &copy; <span class="text-balleny">Nicolás Díaz</span></p>
+                </div>
+            </section>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
