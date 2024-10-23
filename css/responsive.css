@@ -95,7 +95,7 @@
 }
 @media screen and (max-width:672px) {
     #header-image{
-        background-size: 100% 400px;
+        background-size: 100% 300px;
     }
     #main-quecocinar-cards .card,
     #main-quecocinar-cards .card-img-top{

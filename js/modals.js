@@ -3,26 +3,15 @@ import { createElementCustom } from "./elementos.js"
 const svgDuracion = (duracion) => {
     return `
     <div class="d-flex gap-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-            <path d="M12 12h3.5" />
-            <path d="M12 7v5" />
-        </svg>
-        <p>${duracion}</p>
+        <img src="../assets/svg/reloj.svg" alt="tiempo-de-coccion" />
+        <p class="mb-1">${duracion}</p>
     </div>`;
 }
 const svgPorciones = (porciones) => {
     return `
     <div class="d-flex gap-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-        </svg>
-        <p>${porciones} porciones</p>
+        <img src="../assets/svg/persona.svg" alt="porciones" />
+        <p class="mb-1">${porciones} porciones</p>
     </div>`;
 }
 /**
@@ -144,7 +133,7 @@ const contenedorModales = [
             <img src="../assets/img-recipes/alitas_paso6.webp" alt="receta_alitas_paso4" class="rounded img-steps-recipe" width="100px" height="100px" />
         </div>
         <h5>Quinto paso</h5>
-        <p>...rebozamos y dejamos descansar en un freezer o congelador 20’ minutos.</p>
+        <p>...rebozamos y dejamos descansar en un freezer o congelador 20 minutos.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
             <img src="../assets/img-recipes/alitas_paso7.webp" alt="receta_alitas_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
             <img src="../assets/img-recipes/alitas_paso8.webp" alt="receta_alitas_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
@@ -157,7 +146,7 @@ const contenedorModales = [
             <img src="../assets/img-recipes/alitas_paso11.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
         </div>`;
 
-        return esqueletoReceta("alitas-fritas.webp", "alitas fritas", "40 minutos", 4,
+        return esqueletoReceta("alitas-fritas.jpg", "alitas fritas", "40 minutos", 4,
         [
             "1Kg o 10 alitas de pollo",
             "1 huevo",
@@ -185,7 +174,7 @@ const contenedorModales = [
             <img src="../assets/img-recipes/gramajo_paso3.webp" alt="receta_gramajo_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
         </div>
         <h5>Cuarto paso</h5>
-        <p>Cocinar unos minutos más hasta que los huevos se cocinen. Servir y a disfrutar! 🤤</p>
+        <p>Cocinar unos minutos más hasta que los huevos se cocinen. Servir y ¡a disfrutar! 🤤</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
             <img src="../assets/img-recipes/gramajo_paso4.webp" alt="receta_gramajo_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
         </div>

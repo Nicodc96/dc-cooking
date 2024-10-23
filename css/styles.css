@@ -109,11 +109,17 @@
 #container-navlogo p:hover{
     color: #272727;
 }
-#contenedor-svglogo > svg,
+#contenedor-svglogo > img:hover{
+    cursor: pointer;
+}
+#contenedor-svglogo > img,
 #container-navlogo p{
     border-radius: 8px;
-    transition: all 0.45s;
 }
+.offcanvas, .modal, .fade{
+    transition: ease-in-out 0.35s;
+}
+
 #contenedor-svglogo > svg:hover{
     cursor: pointer;
     background-color: rgb(221, 139, 38);
@@ -216,8 +222,12 @@ body{
 #main-video{
     margin: 35px 0px 35px 0px;
 }
+
+.carousel-item{
+    transition: linear .30s;
+}
 .carousel-item > img{
-    filter: brightness(45%);
+    filter: brightness(50%);
 }
 .comida-veg,
 .comida-ita,
