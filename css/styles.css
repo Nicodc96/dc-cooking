@@ -52,6 +52,9 @@
 .sticky + .content {
     padding-top: 60px;
 }
+.navbar{
+    z-index: 2;
+}
 .width-95{
     width: 95%!important;
 }
