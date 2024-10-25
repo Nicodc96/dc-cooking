@@ -75,6 +75,41 @@
     </header>
     <main>
         <section id="contenedorContacto">
+            <div class="row mx-5 my-5">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <article id="contenedorContactoImg">
+                        <img src="../assets/contact-us.jpg" alt="contactanos" id="imgContactanos">
+                    </article>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 bg-white rounded px-4 py-4" id="contenedorFormContacto">
+                    <h2 class="text-pacifico text-center red-custom mt-5" id="titleForm">¿Tienes alguna duda o sugerencia?</h2>
+                    <form id="formContacto">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="inputFormName" class="floatlabel text-label-form">Ingrese su nombre</label>
+                                <input type="text" name="form-name" id="inputFormName" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="inputFormEmail" class="floatlabel text-label-form">Ingrese su email</label>
+                                <input type="email" name="form-email" id="inputFormEmail" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <textarea name="formTextArea" id="inputTextArea" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
+                            </div>
+                        </div>
+                        <div id="contenedorFormBoton">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="contenedorMapFAQ">
+
+        </section>
+        <!-- <section id="contenedorContacto">
             <article id="contenedorContactoImg">
                 <img src="../assets/contact-us.jpg" alt="contactanos" id="imgContactanos">
             </article>
@@ -101,7 +136,7 @@
                     </div>
                 </form>
             </article>
-        </section>
+        </section> -->
     </main>
     <footer>
         <section id="contenedor-footer" class="bg-orange">

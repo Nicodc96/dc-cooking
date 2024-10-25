@@ -475,6 +475,9 @@
 }
 /* -------- contacto -------- */
 @media screen and (max-width:1250px) {
+    #imgContactanos{
+        width: 500px;
+    }
     #contenedorContactoForm{
         width: 70vw;
     }
@@ -482,45 +485,57 @@
         width: 29.5vw;
     }
 }
-@media screen and (max-width:991px) {
+@media screen and (max-width:1140px) {
+    #imgContactanos{
+        width: 425px;
+    }
     #contenedorContactoForm{
         width: 85vw;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-    .input-custom{
-        width: 35.5vw;
+    #titleForm{
+        margin-top: 0px!important;
+    }
+}
+@media screen and (max-width:991px) {
+    #contenedorContactoImg{
+        display: flex;
+        justify-content: center;
     }
     #imgContactanos{
         width: 500px;
     }
+    #contenedorFormContacto{
+        background-color: transparent!important;
+    }
+    #formContacto{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        padding: 5px;
+    }
 }
 @media screen and (max-width:850px) {
-    .input-custom{
-        width: 33.5vw;
+    #formContacto{
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
-@media screen and (max-width:750px) {
-    .input-custom{
-        width: 31.5vw;
-    }
-}
-@media screen and (max-width:660px) {
-    .input-custom{
-        width: 29.5vw;
+@media screen and (max-width:700px) {
+    #formContacto{
+        margin-left: 7vw;
+        margin-right: 7vw;
     }
 }
 @media screen and (max-width:600px) {
-    #contenedorContacto{
-        margin-left: auto;
-        margin-right: auto;
+    #formContacto{
+        margin-left: 0vw;
+        margin-right: 0vw;
     }
     #contenedorContacto{
         width: 100vw;
-    }
-    #contenedorContactoForm{
-        width: 90vw;
-    }
-    .input-custom{
-        width: 33vw;
     }
     .floatlabel,
     #inputTextArea{
@@ -531,55 +546,31 @@
     #formContacto{
         height: 420px;
     }
-    .inputs{
-        width: 100%;
-        height: 40px;
-        margin-bottom: 20px;
-    }
     #inputTextArea{
         margin-top: 10px;
     }
-    .input-custom{
-        width: 74vw;
-    }
 }
 @media screen and (max-width:500px) {
-    .input-custom{
-        width: 72vw;
-    }
     #imgContactanos{
         width: 400px;
     }
 }
 @media screen and (max-width:440px) {
+    #contenedorFormContacto{
+        padding-bottom: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
     #imgContactanos{
         width: 375px;
     }
-    .input-custom{
-        width: 70vw;
-    }
 }
 @media screen and (max-width:400px) {
-    #contenedorContacto{
-        gap: 0;
-    }
     #imgContactanos{
         width: 325px;
     }
-    #contenedorContactoForm{
-        width: 100vw;
-    }
-    #formContacto{
-        width: 90vw;
-    }
-    .input-custom{
-        width: 78vw;
-    }
 }
 @media screen and (max-width:350px) {
-    .input-custom{
-        width: 75vw;
-    }
     #imgContactanos{
         width: 300px;
     }

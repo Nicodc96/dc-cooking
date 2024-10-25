@@ -40,6 +40,10 @@
 .text-balleny{
     font-family: 'Balleny', sans-serif;
 }
+
+.red-custom{
+    color: #DA2B1F;
+}
 .content{
     padding: 30px;
 }
@@ -218,7 +222,6 @@ body{
     margin-bottom: 20px;
     text-align: center;
     font-size: 55px;
-    color: #DA2B1F;
 }
 #contenedor-carrousel,
 #imagen-principal,
@@ -277,7 +280,6 @@ body{
 #main-video > h3{
     text-align: center;
     margin-bottom: 35px;
-    color: #DA2B1F;
 }
 #main-video iframe{
     width:670px;
@@ -388,7 +390,6 @@ body{
     margin-top: 35px;
     margin-bottom: 35px;
     margin-left: 35px;
-    color: #DA2B1F;
 }
 .divisor{
     width: 17vw;
@@ -448,7 +449,27 @@ body{
     font-size: 18px;
 }
 /* ----- Contacto ----- */
-#contenedorContacto{
+
+#imgContactanos{
+    width: 550px;
+    border-radius: 8px;
+}
+#formContacto{
+    margin-top: 40px;
+}
+
+.text-label-form{
+    font-size: 13px;
+    color: #575555;
+}
+
+#contenedorFormBoton{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+/* #contenedorContacto{
     margin: 45px;
     display: flex;
     justify-content: center;
@@ -465,9 +486,6 @@ body{
 #contenedorContactoForm{
     padding: 20px;
     width: 50vw;
-}
-#contenedorContactoForm > h2{
-    color: #DA2B1F;
 }
 #formContacto{
     margin-top: 40px;
