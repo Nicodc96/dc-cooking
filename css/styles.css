@@ -245,36 +245,34 @@ body{
 #contenedor-quecocinar-titulo{
     gap: 20px;
 }
-#main-quecocinar-cards{
+#mainCards{
     margin: 25px 0px 25px 0px;
     display: flex;
     justify-content: center;
-}
-#main-quecocinar-cards > div{
-    display: flex;
-    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    max-width: 60vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
-#main-quecocinar-cards .card{
+#mainCards .card{
     width: 13vw;
     transition: all 0.35s;
 }
-#main-quecocinar-cards .card:hover{
+#mainCards .card:hover{
     cursor: pointer;
     transform: scale(1.03);
 }
-#main-quecocinar-cards .card-img-top{
-    width: 13vw;
+#mainCards .card-img-top{
+    width: auto;
     height: 200px;
 }
-#main-quecocinar-cards .card > .card-body{
+#mainCards .card > .card-body{
     display: flex;
     gap: 20px;
     padding-bottom: 10px;
 }
-#main-quecocinar-cards .card > .card-body h5{
+#mainCards .card > .card-body h5{
     font-size: 15px;
 }
 #main-video > h3{
@@ -396,7 +394,7 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #cfcfcf;
-  }
+}
 #buscadorContainer {
     display: flex;
     justify-content: center;
@@ -450,16 +448,22 @@ body{
 }
 /* ----- Contacto ----- */
 
+#contenedorContactoImg{
+    padding-left: 80px;
+}
 #imgContactanos{
     width: 550px;
     border-radius: 8px;
+}
+
+#titleForm{
+    font-size: 40px;
 }
 #formContacto{
     margin-top: 40px;
 }
 
 .text-label-form{
-    font-size: 13px;
     color: #575555;
 }
 
@@ -468,65 +472,7 @@ body{
     display: flex;
     justify-content: end;
 }
-
-/* #contenedorContacto{
-    margin: 45px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 35px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.65);
-}
-#imgContactanos{
-    width: 600px;
-    border-radius: 8px;
-}
-#contenedorContactoForm{
-    padding: 20px;
-    width: 50vw;
-}
-#formContacto{
-    margin-top: 40px;
-    padding: 15px;
-    box-shadow: 5px 5px 15px 7px rgba(26, 26, 26, 0.35);
-    border-radius: 8px;
-    height: 380px;
-}
-.inputs{
-    position: relative;
-    height: 80px;
-    line-height: 30px;
-    padding-top: 10px;
-}
-.input-custom{
-    position: absolute;
-    width: 20.5vw;
-    margin: 0 10px;
-    transition: 0.1s ease;
-    outline: none;
-}
-.floatlabel{
-    position: absolute;
-    font-size: 1.05em;
-    margin-top: 2px;
-    margin-left: 30px;
-    color: rgb(92, 92, 92);
-    cursor: text;
-    transition: 0.2s ease;
-    border-radius: 5px;
-}
-.input-custom:focus + .floatlabel,
-.input-custom:valid + .floatlabel{
-    transform: translate(-15px, -22px) scale(0.9);
-    font-size: 18px;
-    line-height: 20px;
-    color: var(--bs-primary);
-    z-index: 2000;
-}
-#contenedorFormBoton{
-    margin-top: 20px;
-    display: flex;
-    justify-content: end;
+#mapContacto{
+    width: 80%;
+    height: 350px;
 }

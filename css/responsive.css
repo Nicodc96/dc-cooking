@@ -1,18 +1,26 @@
 /* -------- index -------- */
+@media screen and (max-width:1400px) {
+    #mainCards{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
 @media screen and (max-width:1335px) {
+    #mainCards{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
     .col-12 p{
         width: 60%;
     }
 }
 @media screen and (max-width:1255px) {
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 16vw;
     }
 }
 @media screen and (max-width:1255px) {
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 18vw;
     }
 }
@@ -20,11 +28,8 @@
     #contenedor-textmenu .nav-link{
         display: none;
     }
-    #main-quecocinar-cards > div{
-        max-width: 100%;
-    }
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    
+    #mainCards .card{
         width: 19vw;
     }
     #imagen-principal > img{
@@ -38,8 +43,7 @@
     .offcanvas-body{
         padding-top: 215px;
     }
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 22vw;
     }
     #imagen-principal > img{
@@ -58,8 +62,7 @@
     }    
 }
 @media screen and (max-width:800px){
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 22vw;
     }
     #imagen-principal > img{
@@ -88,8 +91,7 @@
     }
 }
 @media screen and (max-width:750px) {
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 25vw;
     }
 }
@@ -97,8 +99,7 @@
     #header-image{
         background-size: 100% 300px;
     }
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 28vw;
     }
     #imagen-principal > img{
@@ -150,15 +151,13 @@
     #contenedor-texto-main-quecocinar > p{
         width: 70%;
     }
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 30vw;
     }
 }
 @media screen and (max-width:530px){
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
-        width: 34vw;
+    #mainCards .card{
+        width: 45vw;
     }
     .comida-veg,
     .comida-ita,
@@ -177,18 +176,13 @@
     }
 }
 @media screen and (max-width:518px){
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
-        width: 36vw;
-    }
     #contenedor-footer{
         height: 400px;
     }
 }
 @media screen and (max-width:460px){
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
-        width: 38vw;
+    #mainCards .card{
+        width: 50vw;
     }
     #header-image > h1{
         font-size: 46px;
@@ -197,11 +191,10 @@
     }
 }
 @media screen and (max-width:415px){
-    #main-quecocinar-cards > div{
+    #mainCards > div{
         max-width: 80vw;
     }
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card{
         width: 50vw;
     }
     #contenedor-quecocinar-titulo{
@@ -221,6 +214,20 @@
         height: 200px;
     }        
 }
+@media screen and (max-width:375px){
+    #mainCards .card{
+        width: 60vw;
+    }
+}
+@media screen and (max-width:320px){
+    #mainCards{
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    #mainCards .card{
+        width: 70vw;
+    }
+}
 @media screen and (max-width:305px){
     #main-carrousel > h2{
         font-size: 25px;
@@ -231,8 +238,8 @@
     .comida-fran{
         height: 200px;
     }
-    #main-quecocinar-cards .card,
-    #main-quecocinar-cards .card-img-top{
+    #mainCards .card,
+    #mainCardss .card-img-top{
         width: 65vw;
     }
     .social-media-button{
@@ -474,6 +481,11 @@
     }
 }
 /* -------- contacto -------- */
+@media screen and (max-width:1400px) {
+    #contenedorContactoImg{
+        padding-left: 10px;
+    }
+}
 @media screen and (max-width:1250px) {
     #imgContactanos{
         width: 500px;
@@ -563,6 +575,9 @@
     }
     #imgContactanos{
         width: 375px;
+    }
+    #titleForm{
+        font-size: 30px;
     }
 }
 @media screen and (max-width:400px) {
