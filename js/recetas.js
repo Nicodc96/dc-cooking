@@ -13,6 +13,7 @@ const toggleSticky = () => {
 const offcanvas_btnInicioR = document.querySelector("#offcBtnInicioR");
 const offcanvas_btnRecetasR = document.querySelector("#offcBtnRecetasR");
 const offcanvas_btnContactoR = document.querySelector("#offcBtnContactoR");
+const offcanvas_btnAboutUsR = document.querySelector("#offcBtnAcercaDeR");
 
 offcanvas_btnInicioR.addEventListener("click", () => {
     window.location.href = "../index.html";
@@ -23,6 +24,9 @@ offcanvas_btnRecetasR.addEventListener("click", () => {
 offcanvas_btnContactoR.addEventListener("click", () => {
     window.location.href = "./contacto.html";
 });
+offcanvas_btnAboutUsR.addEventListener("click", () => {
+    window.location.href = "./aboutus.html";
+})
 /* ---------------------------------- */
 
 /* Sección lógica para cards */
