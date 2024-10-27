@@ -24,3 +24,49 @@ offcanvas_btnContactoC.addEventListener("click", () => {
     window.location.href = "./contacto.html";
 });
 /* ---------------------------------- */
+
+/* Manejo del formulario */
+
+import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/src/sweetalert2.js';
+const formContacto = document.querySelector("#formContacto");
+
+formContacto.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: formContacto.method,
+        body: data,
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(response => {
+        if (response.ok){
+            Swal.fire({
+                title: "Confirmación",
+                text: "Información enviada correctamente.",
+                icon: "success",
+                confirmButtonText: "Aceptar",
+                confirmButtonColor: "#6abd46"
+            });
+            formContacto.reset();
+        } else{
+            let errorMessage = "¡No se ha enviado el formulario! Verifique que toda la información ingresada sea la correcta.";
+            Swal.fire({
+                title: "¡Aviso!",
+                text: errorMessage,
+                icon: "warning",
+                confirmButtonText: "Aceptar"
+            });
+        }
+    }).catch(error => {
+        let errorMessage = "¡Ha ocurrido un problema al enviar el formulario! Descuida, el problema ha sucedido de nuestro lado.";
+            Swal.fire({
+                title: "¡Error!",
+                text: errorMessage,
+                icon: "error",
+                confirmButtonText: "Entendido"       
+            });
+        console.log(error);
+    })
+});

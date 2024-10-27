@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="shortcut icon" href="../assets/oven.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -83,20 +84,20 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 bg-white rounded px-4 py-4" id="contenedorFormContacto">
                     <h2 class="text-pacifico text-center red-custom mt-5" id="titleForm">¿Tienes alguna duda o sugerencia?</h2>
-                    <form id="formContacto">
+                    <form id="formContacto" method="POST" action="https://formspree.io/f/mnnqjvgl">
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
                                 <label for="inputFormName" class="floatlabel text-label-form">Ingrese su nombre</label>
-                                <input type="text" name="form-name" id="inputFormName" class="form-control" required>
+                                <input type="text" name="nombre" id="inputFormName" class="form-control" required>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <label for="inputFormEmail" class="floatlabel text-label-form">Ingrese su email</label>
-                                <input type="email" name="form-email" id="inputFormEmail" class="form-control" required>
+                                <input type="email" name="email" id="inputFormEmail" class="form-control" required>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-12">
-                                <textarea name="formTextArea" id="inputTextArea" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
+                                <textarea name="textArea" id="inputTextArea" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
                             </div>
                         </div>
                         <div id="contenedorFormBoton">
@@ -113,34 +114,6 @@
                     </form>
                 </div>                
             </div>
-        </section> -->
-        <!-- <section id="contenedorContacto">
-            <article id="contenedorContactoImg">
-                <img src="../assets/contact-us.jpg" alt="contactanos" id="imgContactanos">
-            </article>
-            <article id="contenedorContactoForm">
-                <h2 class="text-pacifico text-center">¿Tienes alguna duda o sugerencia?</h2>
-                <form id="formContacto">
-                    <div class="row">
-                        <div class="col-6 inputs">
-                            <input type="text" name="form-name" id="inputFormName" class="form-control input-custom" required>
-                            <label for="inputFormName" class="floatlabel">Ingrese su nombre</label>
-                        </div>
-                        <div class="col-6 inputs">
-                            <input type="email" name="form-email" id="inputFormEmail" class="form-control input-custom" required>
-                            <label for="inputFormEmail" class="floatlabel">Ingrese su email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <textarea name="formTextArea" id="inputTextArea" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
-                        </div>
-                    </div>
-                    <div id="contenedorFormBoton">
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </div>
-                </form>
-            </article>
         </section> -->
     </main>
     <footer>
@@ -187,7 +160,7 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="../js/contacto.js" type="module"></script>
 </body>
 </html>
