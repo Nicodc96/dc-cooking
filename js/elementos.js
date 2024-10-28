@@ -80,6 +80,7 @@ const crearContenedorModal = (numReceta) => createElementCustom("article", [], "
  * @param {Array<String>} clases Array de strings con los nombres de las clases CSS a agregar al elemento ***opcional***.
  * @param {String} contenidoTexto Contenido textual del elemento ***opcional***.
  * @param {Object} atributos Atributos a agregar al elemento en forma de string tanto la clave como el valor ***opcional***.
+ * @throws Error al intentar enviar atributo(s) que no son del tipo **clave-valor**
  * @returns {HTMLElement} Referencia del **HTMLElement* diseñado.
  */
 const createElementCustom = (tipoElemento, clases, contenidoTexto, atributos) => {

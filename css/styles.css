@@ -309,6 +309,7 @@ body{
 #container-logofooter p:hover,
 #footer-nombre .text-balleny:hover{
     color: #272727;
+    cursor: pointer;
 }
 #contenedor-footer .col-4{
     display: flex;
@@ -456,7 +457,7 @@ body{
     border-radius: 8px;
 }
 
-#titleForm{
+#titleForm, #titleMap{
     font-size: 40px;
 }
 #formContacto{
@@ -472,7 +473,25 @@ body{
     display: flex;
     justify-content: end;
 }
+
+/* About us */
+
+.reset-pl{
+    padding-left: 0;
+}
+#imgAcercaDe{
+    width: 40vw;
+}
+#contenedorTextoQuienesSomos p{
+    font-size: 17px;
+}
+#contenedorMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
 #mapContacto{
-    width: 80%;
+    width: 50%;
     height: 350px;
 }
