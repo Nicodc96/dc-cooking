@@ -325,27 +325,21 @@
     #buscadorInput{
         width: 30vw;
     }
-    #contenedorCardsR .card{
-        width: 25vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 24.9vw;
+        width: 25vw;
     }
 }
 @media screen and (max-width:800px){
-    #contenedorCardsR .card{
-        width: 28vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 27.7vw;
+        width: 28vw;
     }
 }
 @media screen and (max-width:635px) {
-    #contenedorCardsR .card{
-        width: 30vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 29.9vw;
+        width: 30vw;
     }
 }
 @media screen and (max-width:600px){
@@ -356,19 +350,15 @@
     #buscadorInput{
         width: 40vw;
     }
-    #contenedorCardsR .card{
-        width: 35vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 34.9vw;
+        width: 35vw;
     }
 }
 @media screen and (max-width:530px){
-    #contenedorCardsR .card{
-        width: 40vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 39.9vw;
+        width: 40vw;
     }
 }
 @media screen and (max-width:500px){
@@ -400,11 +390,9 @@
     #contenedorPaginacion{
         gap: 6vw;
     }
-    #contenedorCardsR .card{
-        width: 50vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 49.5vw;
+        width: 50vw;
     }
 }
 @media screen and (max-width:430px){
@@ -432,11 +420,9 @@
     #buscadorInput{
         width: 60vw;
     }
-    #contenedorCardsR .card{
-        width: 52vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: 51.5vw;
+        width: 52vw;
     }
     #modalReceta1 .img-top-modal{
         height: 300px;
