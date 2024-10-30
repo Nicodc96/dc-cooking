@@ -47,8 +47,8 @@ formContacto.addEventListener("submit", (event) => {
     }).then(response => {
         if (response.ok){
             Swal.fire({
-                title: "Confirmación",
-                text: "Información enviada correctamente.",
+                title: "¡Gracias!",
+                text: "Estaremos revisando tu solicitud/sugerencia lo antes posible.",
                 icon: "success",
                 confirmButtonText: "Aceptar",
                 confirmButtonColor: "#6abd46"
