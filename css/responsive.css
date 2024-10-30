@@ -448,11 +448,9 @@
     #buscadorInput{
         width: 60vw;
     }
-    #contenedorCardsR .card{
-        width: 65vw;
-    }
+    #contenedorCardsR .card,
     #contenedorCardsR .card-img-top{
-        width: calc(64.5vw);
+        width: 65vw;
     }
     #contenedorCardsR{
         width: 100%;
