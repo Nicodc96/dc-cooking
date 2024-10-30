@@ -119,6 +119,10 @@
 #contenedor-svglogo > img:hover{
     cursor: pointer;
 }
+.navlogo-img{
+    width: 35px;
+    height: 40px;
+}
 #contenedor-svglogo > img,
 #container-navlogo p{
     border-radius: 8px;
