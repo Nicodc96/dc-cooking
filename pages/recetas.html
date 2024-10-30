@@ -108,19 +108,6 @@
                     </div>
                 </div>
                 <div class="col-9 d-flex gap-3 flex-wrap justify-content-center" id="contenedorCardsR">
-                    <section id="contenedorModalsPasosRecetas">
-                        <div class="modal fade" id="modalPasosReceta" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modalPasosRecetaLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                                    </div>
-                                    <div class="modal-body d-flex justify-content-center" id="modalPasosRecetaBody">                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     <article class="card" id="budinConArandanos" data-bs-toggle="modal" data-bs-target="#modalReceta1">
                         <img src="../assets/budin-arandanos.webp" class="card-img-top" alt="budin de arandanos">
                         <div class="card-body">
@@ -158,14 +145,25 @@
                     </article>
                 </div>
             </div>
+            <div id="contenedorModalsPasosRecetas">
+                <div class="modal fade" id="modalPasosReceta" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modalPasosRecetaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center" id="modalPasosRecetaBody"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row width-95">
-                <section class="col-3" id="contenedorPaginacionRelleno"></section>
-                <section class="col-9" id="contenedorPaginacion">
-                <Button class="btn btn-primary disabled">Página anterior</Button>
-                <p class="fw-semibold pt-1">Página: 1</p>
-                <Button 
-                    class="btn btn-primary disabled">Página Siguiente</Button>
-                </section>
+                <div class="col-3" id="contenedorPaginacionRelleno"></div>
+                <div class="col-9" id="contenedorPaginacion">
+                    <Button class="btn btn-primary disabled fw-semibold"><</Button>
+                    <p class="fw-semibold pt-1">Página: 1</p>
+                    <Button class="btn btn-primary disabled fw-semibold">></Button>
+                </div>
             </div>
         </section>
     </main>

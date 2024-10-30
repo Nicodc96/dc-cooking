@@ -293,8 +293,8 @@
     }
 }
 
-@media screen and (max-width:990px){
-    #modalReceta2 .img-top-modal{
+@media screen and (max-width:991px){
+    #modalReceta2 .img-top-modal, #modalReceta5 .img-top-modal{
         width: 450px;
         height: 350px;
     }
@@ -337,7 +337,7 @@
         width: 28vw;
     }
     #contenedorCardsR .card-img-top{
-        width: 27.9vw;
+        width: 27.7vw;
     }
 }
 @media screen and (max-width:635px) {
@@ -355,10 +355,6 @@
     #containerControlsCards > *,
     #buscadorInput{
         width: 40vw;
-    }
-    #contenedorCardsR{
-        width: 60%;
-        margin-left: 24vw;
     }
     #contenedorCardsR .card{
         width: 35vw;
@@ -384,7 +380,7 @@
         height: 400px;
         width: 400px;
     }
-    #modalReceta2 .img-top-modal{
+    #modalReceta2 .img-top-modal, #modalReceta5 .img-top-modal{
         height: 300px;
         width: 400px;
     }
@@ -405,19 +401,21 @@
         gap: 6vw;
     }
     #contenedorCardsR .card{
-        width: 45vw;
+        width: 50vw;
     }
     #contenedorCardsR .card-img-top{
-        width: 44.9vw;
+        width: 49.5vw;
+    }
+}
+@media screen and (max-width:430px){
+    #modalReceta5 .img-top-modal{
+        width: 350px;
     }
 }
 @media screen and (max-width:415px){
-    #contenedorPaginacion{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-    }
-    #modalReceta1 .img-top-modal{
+    #modalReceta1 .img-top-modal,
+    #modalReceta3 .img-top-modal,
+    #modalReceta4 .img-top-modal{
         height: 350px;
         width: 350px;
     }
@@ -426,7 +424,7 @@
         width: 350px;
     }
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:375px){
     #containerControlsCards{
         width: 80vw;
     }
@@ -438,21 +436,23 @@
         width: 52vw;
     }
     #contenedorCardsR .card-img-top{
-        width: calc(52vw - 2.2vw);
+        width: 51.5vw;
     }
     #modalReceta1 .img-top-modal{
         height: 300px;
         width: 300px;
     }
-    #modalReceta2 .img-top-modal{
+    #modalReceta2 .img-top-modal, 
+    #modalReceta5 .img-top-modal{
         width: 300px;
     }
+    
     .container-img-pasos{
         flex-direction: column;
         align-items: center;
     }
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:320px){
     #containerControlsCards{
         width: 90vw;
     }
@@ -472,7 +472,8 @@
         width: 100%;
         margin-left: 7vw;
     }
-    #modalReceta1 .img-top-modal{
+    #modalReceta1 .img-top-modal, 
+    #modalReceta5 .img-top-modal{
         height: 270px;
         width: 270px;
     }
