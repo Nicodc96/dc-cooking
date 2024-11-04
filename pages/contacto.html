@@ -31,11 +31,11 @@
 </head>
 <body>
     <header>
-        <section id="header-image">
+        <div id="header-image">
             <h1>DCCooking</h1>
-        </section>
+        </div>
         <nav class="navbar navbar-expand-lg bg-orange">
-            <section class="d-flex w-100 justify-content-evenly gap-10 me-5">
+            <div class="d-flex w-100 justify-content-evenly gap-10 me-5">
                 <div id="container-navlogo">
                     <a href="../index.html">
                         <img src="../assets/svg/oven.svg" alt="logo-olla" class="navlogo-img">
@@ -53,36 +53,36 @@
                 <div id="contenedor-svglogo">
                     <img src="../assets/svg/black-lines.svg" alt="lineas-negras" data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas">
                 </div>
-            </section>
+            </div>
         </nav>
-        <section class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="menu-offcanvas-label">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="offcanvasBody">
             <div class="offcanvas-header bg-orange">
                 <h5 class="text-molendra text-white">Navegacion</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" id="offcanvasBody">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Búsqueda..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
-                <section id="offcanvas-buttons">
+                <div id="offcanvas-buttons">
                     <button type="button" id="offcBtnInicioC" class="btn-98">Inicio</button>
                     <button type="button" id="offcBtnRecetasC" class="btn-98">Recetas</button>
                     <button type="button" id="offcBtnAcercaDeC" class="btn-98">Acerca de</button>
                     <button type="button" id="offcBtnContactoC" class="btn-98">Contacto</button>
-                </section>
+                </div>
             </div>
-        </section>
+        </div>
     </header>
     <main>
-        <section id="contenedorContacto">
+        <div id="contenedorContacto">
             <div class="row mx-5 my-5">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <article id="contenedorContactoImg">
+                    <div id="contenedorContactoImg">
                         <img src="../assets/contact-us.jpg" alt="contactanos" id="imgContactanos">
-                    </article>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 bg-white rounded px-4 py-4" id="contenedorFormContacto">
+                <section class="col-lg-6 col-md-12 col-sm-12 bg-white rounded px-4 py-4" id="contenedorFormContacto">
                     <h2 class="text-pacifico text-center red-custom mt-5" id="titleForm">¿Tienes alguna duda o sugerencia?</h2>
                     <form id="formContacto" method="POST" action="https://formspree.io/f/mnnqjvgl">
                         <div class="row">
@@ -104,40 +104,40 @@
                             <button type="submit" class="btn btn-success">Enviar</button>
                         </div>
                     </form>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
-        <section id="contenedor-footer" class="bg-orange">
+        <div id="contenedor-footer" class="bg-orange">
             <div class="row w-100">
                 <div class="col-4">
                     <div id="container-logofooter">
-                        <a href="./index.html">
+                        <a href="../index.html">
                             <img src="../assets/svg/oven.svg" alt="logo-olla" class="navlogo-img">
                             <p class="text-molendra">DC Cooking</p>
                         </a>
                     </div>
                 </div>
                 <div class="col-8">
-                    <section class="social-media-buttons">
-                        <article class="social-media-button icon-ig">
+                    <div class="social-media-buttons">
+                        <div class="social-media-button icon-ig">
                             <img src="../assets/svg/instagram.svg" alt="Instagram">
-                        </article>
-                        <article class="social-media-button icon-tw">
+                        </div>
+                        <div class="social-media-button icon-tw">
                             <img src="../assets/svg/twitter.svg" alt="Twitter">
-                        </article>
-                        <article class="social-media-button icon-git">
+                        </div>
+                        <div class="social-media-button icon-git">
                             <a href="https://github.com/Nicodc96" target="_blank" rel="norefferer nofollow">
                                 <img src="../assets/svg/github-white.svg" alt="Github">
                             </a>
-                        </article>
-                        <article class="social-media-button icon-lki">
+                        </div>
+                        <div class="social-media-button icon-lki">
                             <a href="https://www.linkedin.com/in/lautarondiaz" target="_blank" rel="norefferer nofollow">
                                 <img src="../assets/svg/linkedin.svg" alt="LinkedIn">
                             </a>
-                        </article>
-                    </section>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row w-100">
@@ -149,7 +149,7 @@
             <div id="footer-nombre">
                 <p class="fw-semibold fst-italic fs-4">2024 &copy; <span class="text-balleny">Nicolás Díaz</span></p>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

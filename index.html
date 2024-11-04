@@ -30,11 +30,11 @@
     </head>
     <body>
         <header>
-            <section id="header-image">
+            <div id="header-image">
                 <h1>DCCooking</h1>
-            </section>
+            </div>
             <nav class="navbar navbar-expand-lg bg-orange">
-                <section class="d-flex w-100 justify-content-evenly gap-10 me-5">
+                <div class="d-flex w-100 justify-content-evenly gap-10 me-5">
                     <div id="container-navlogo">
                         <a href="./index.html">
                             <img src="./assets/svg/oven.svg" alt="logo-olla" class="navlogo-img">
@@ -52,9 +52,9 @@
                     <div id="contenedor-svglogo">
                         <img src="./assets/svg/black-lines.svg" alt="lineas-negras" data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas">
                     </div>
-                </section>
+                </div>
             </nav>
-            <section class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="offcanvasBody">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="offcanvasBody">
                 <div class="offcanvas-header bg-orange">
                     <h5 class="text-molendra text-white">Navegacion</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
@@ -64,59 +64,59 @@
                         <input class="form-control me-2" type="search" placeholder="Búsqueda..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-                    <section id="offcanvas-buttons">
+                    <div id="offcanvas-buttons">
                         <button type="button" id="offcBtnInicio" class="btn-98">Inicio</button>
                         <button type="button" id="offcBtnRecetas" class="btn-98">Recetas</button>
                         <button type="button" id="offcBtnAcercaDe" class="btn-98">Acerca de</button>
                         <button type="button" id="offcBtnContacto" class="btn-98">Contacto</button>
-                    </section>
+                    </div>
                 </div>
-            </section>
+            </div>
         </header>
         <main>
-            <section id="imagen-principal">
+            <div id="imagen-principal">
                 <img src="./assets/cocina-1.jpg" alt="cocina e ingredientes">
-            </section>
+            </div>
             <section id="main-carrousel">
                 <h2 class="text-pacifico red-custom">Las recetas mas ricas y fáciles</h2>
-                <section id="contenedor-carrousel">
+                <div id="contenedor-carrousel">
                     <div id="carousel-comidas" class="carousel slide" data-bs-ride="carousel">
-                        <section class="carousel-indicators">
+                        <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carousel-comidas" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </section>
-                        <section class="carousel-inner">
-                            <article class="carousel-item active">
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
                                 <img src="./assets/comida-italiana.jpg" class="d-block w-100 comida-ita" alt="comida italiana">                  
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Recetas Italianas</h5>
-                                <p>Desde Milán, Roma, Venecia y Nápoles. ¡Las mejores recetas de la Bel Paese!</p>                              
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Recetas Italianas</h5>
+                                    <p>Desde Milán, Roma, Venecia y Nápoles. ¡Las mejores recetas de la Bel Paese!</p>                              
+                                </div>
                             </div>
-                            </article>
-                            <article class="carousel-item">
-                            <img src="./assets/comida-vegetariana.jpg" class="d-block w-100 comida-veg" alt="comida vegetariana">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Recetas Vegetarianas</h5>
-                                <p>Aquí encontraras las más sanas comidas veganas y vegetarianas.</p>
+                            <div class="carousel-item">
+                                <img src="./assets/comida-vegetariana.jpg" class="d-block w-100 comida-veg" alt="comida vegetariana">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Recetas Vegetarianas</h5>
+                                    <p>Aquí encontraras las más sanas comidas veganas y vegetarianas.</p>
+                                </div>
                             </div>
-                            </article>
-                            <article class="carousel-item">
-                            <img src="./assets/comidas-argentinas.jpg" class="d-block w-100 comida-arg" alt="comida argentina">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>De Argentina al mundo</h5>
-                                <p>¿Has probado las empanadas, el asado o tal vez un choripan? Prueba los mejores platillos del país campeón del mundo.</p>
+                            <div class="carousel-item">
+                                <img src="./assets/comidas-argentinas.jpg" class="d-block w-100 comida-arg" alt="comida argentina">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>De Argentina al mundo</h5>
+                                    <p>¿Has probado las empanadas, el asado o tal vez un choripan? Prueba los mejores platillos del país campeón del mundo.</p>
+                                </div>
                             </div>
-                            </article>
-                            <article class="carousel-item">
-                            <img src="./assets/comida-francesa.jpg" class="d-block w-100 comida-fran" alt="comida francesa">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Avez-vous goûté les meilleurs plats de France?</h5>
-                                <p>Más allá de los crepes y el foie, Francia tiene una de las cocinas más ricas del mundo. Descubre qué platos no deberías perderte si viajas a tierras galas.</p>
+                            <div class="carousel-item">
+                                <img src="./assets/comida-francesa.jpg" class="d-block w-100 comida-fran" alt="comida francesa">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Avez-vous goûté les meilleurs plats de France?</h5>
+                                    <p>Más allá de los crepes y el foie, Francia tiene una de las cocinas más ricas del mundo. Descubre qué platos no deberías perderte si viajas a tierras galas.</p>
+                                </div>
                             </div>
-                            </article>
-                        </section>
+                        </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-comidas" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
@@ -126,7 +126,7 @@
                             <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
-                </section>
+                </div>
             </section>
             <section id="main-quecocinar">
                 <div class="d-flex justify-content-center" id="contenedor-quecocinar-titulo">
@@ -136,64 +136,64 @@
                         <p>Prueba estas combinaciones más populares de comidas <span class="fw-semibold">ricas y fáciles</span></p>
                     </div>
                 </div>
-                <section id="mainCards">
-                        <article class="card">
+                <div id="mainCards">
+                        <div class="card">
                             <img src="./assets/comidas-alaolla.jpg" class="card-img-top" alt="comidas a la olla">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas a la olla</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-concarne.jpg" class="card-img-top" alt="comidas con carne">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas con carne</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-alhorno.jpg" class="card-img-top" alt="comidas al horno">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas al horno</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-concrema.jpg" class="card-img-top" alt="comidas con crema">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas con crema</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-conarroz.jpg" class="card-img-top" alt="comidas con arroz">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas con arroz</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-conpasta.jpg" class="card-img-top" alt="comidas con pasta">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas con pasta</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-conzapallo.jpg" class="card-img-top" alt="comidas con zapallo">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas con zapallo</h5>
                             </div>
-                        </article>
-                        <article class="card">
+                        </div>
+                        <div class="card">
                             <img src="./assets/comidas-conpapas.jpg" class="card-img-top" alt="comidas con papas">
                             <div class="card-body">
                                 <img src="./assets/svg/lupa.svg" alt="lupa">
                                 <h5 class="card-title">Recetas con papas</h5>
                             </div>
-                        </article>
-                </section>
+                        </div>
+                </div>
             </section>
             <section id="main-video">
                 <h3 class="text-pacifico red-custom">¿Qué esperás para probar deliciosas comidas como esta?</h3>
@@ -203,7 +203,7 @@
             </section>
         </main>
         <footer>
-            <section id="contenedor-footer" class="bg-orange">
+            <div id="contenedor-footer" class="bg-orange">
                 <div class="row w-100">
                     <div class="col-4">
                         <div id="container-logofooter">
@@ -214,24 +214,24 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <section class="social-media-buttons">
-                            <article class="social-media-button icon-ig">
+                        <div class="social-media-buttons">
+                            <div class="social-media-button icon-ig">
                                 <img src="./assets/svg/instagram.svg" alt="Instagram">
-                            </article>
-                            <article class="social-media-button icon-tw">
+                            </div>
+                            <div class="social-media-button icon-tw">
                                 <img src="./assets/svg/twitter.svg" alt="Twitter">
-                            </article>
-                            <article class="social-media-button icon-git">
+                            </div>
+                            <div class="social-media-button icon-git">
                                 <a href="https://github.com/Nicodc96" target="_blank" rel="norefferer nofollow">
                                     <img src="./assets/svg/github-white.svg" alt="Github">
                                 </a>
-                            </article>
-                            <article class="social-media-button icon-lki">
+                            </div>
+                            <div class="social-media-button icon-lki">
                                 <a href="https://www.linkedin.com/in/lautarondiaz" target="_blank" rel="norefferer nofollow">
                                     <img src="./assets/svg/linkedin.svg" alt="LinkedIn">
                                 </a>
-                            </article>
-                        </section>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row w-100">
@@ -243,7 +243,7 @@
                 <div id="footer-nombre">
                     <p class="fw-semibold fst-italic fs-4">2024 &copy; <span class="text-balleny">Nicolás Díaz</span></p>
                 </div>
-            </section>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
