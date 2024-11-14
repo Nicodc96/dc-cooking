@@ -32,7 +32,7 @@ offcanvas_btnAboutUsC.addEventListener("click", () => {
 /* Manejo del formulario */
 
 import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/src/sweetalert2.js';
-const formContacto = document.querySelector("#formContacto");
+const formContacto = document.querySelector("#form-contacto");
 
 formContacto.addEventListener("submit", (event) => {
     event.preventDefault();

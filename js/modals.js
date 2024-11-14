@@ -3,14 +3,14 @@ import { createElementCustom } from "./elementos.js"
 const svgDuracion = (duracion) => {
     return `
     <div class="d-flex gap-1">
-        <img src="../assets/svg/reloj.svg" alt="tiempo-de-coccion" />
+        <img src="../assets/svg/reloj.svg" alt="tiempo-de-coccion">
         <p class="mb-1">${duracion}</p>
     </div>`;
 }
 const svgPorciones = (porciones) => {
     return `
     <div class="d-flex gap-1">
-        <img src="../assets/svg/persona.svg" alt="porciones" />
+        <img src="../assets/svg/persona.svg" alt="porciones">
         <p class="mb-1">${porciones} porciones</p>
     </div>`;
 }
@@ -75,23 +75,23 @@ const contenedorModales = [
         <h5>Primer paso</h5>
         <p>Cremar azúcar, ralladura de limón, manteca pomada y queso crema. Agregar huevos de a uno por vez y luego harina tamizada.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/budin_paso1.webp" alt="receta_budin_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/budin_paso2.webp" alt="receta_budin_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/budin_paso3.webp" alt="receta_budin_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/budin_paso1.webp" alt="receta_budin_paso1" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/budin_paso2.webp" alt="receta_budin_paso2" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/budin_paso3.webp" alt="receta_budin_paso3" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Segundo paso</h5>
         <p>Batir hasta lograr una crema. Sumar los arándanos limpios, secos y rociados con un poco de jugo de limón (el ácido del jugo del limón hace que luego no se forme esa aureola verde alrededor de los arándanos). Mezclar y poner dentro de la budinera previamente forrada la base con papel manteca. Esta budinera es de aproximadamente 25 x 10 cm.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/budin_paso4.webp" alt="receta_budin_paso4" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/budin_paso5.webp" alt="receta_budin_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/budin_paso6.webp" alt="receta_budin_paso6" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/budin_paso4.webp" alt="receta_budin_paso4" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/budin_paso5.webp" alt="receta_budin_paso5" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/budin_paso6.webp" alt="receta_budin_paso6" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Tercer paso</h5>
         <p>Cocinar en horno pre-calentado a 180° por aproximadamente 45 minutos (controlar cocción). Una vez frío desmoldar y glasear. Para el glaseado mezclar azúcar impalpable con parte del jugo de limón, ir agregando poco a poco hasta lograr una mezcla fluida pero con consistencia. Decorar con arándanos frescos.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/budin_paso7.webp" alt="receta_budin_paso7" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/budin_paso8.webp" alt="receta_budin_paso8" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/budin-arandanos.webp" alt="receta_budin_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/budin_paso7.webp" alt="receta_budin_paso7" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/budin_paso8.webp" alt="receta_budin_paso8" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/budin-arandanos.webp" alt="receta_budin_paso_final" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>`;
 
         return esqueletoReceta("budin-arandanos.webp", "budin de arándanos", "50 minutos", 12,
@@ -113,37 +113,37 @@ const contenedorModales = [
         <h5>Primer paso</h5>
         <p>Siempre que hago alitas, las hago hervir por lo menos 15 minutos. Es opcional pero haciendo esto sé que en el momento de freír van a estar a punto.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/alitas_paso1.webp" alt="receta_alitas_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/alitas_paso1.webp" alt="receta_alitas_paso1" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Segundo paso</h5>
         <p>Agregamos lo seco primero, harina y los condimentos.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/alitas_paso2.webp" alt="receta_alitas_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/alitas_paso3.webp" alt="receta_alitas_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/alitas_paso2.webp" alt="receta_alitas_paso2" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/alitas_paso3.webp" alt="receta_alitas_paso2" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Tercer paso</h5>
         <p>En este paso lo húmedo el huevo y la leche. Luego, mezclar hasta que te quede la mezcla como en la segunda imagen.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/alitas_paso4.webp" alt="receta_alitas_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/alitas_paso5.webp" alt="receta_alitas_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/alitas_paso4.webp" alt="receta_alitas_paso3" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/alitas_paso5.webp" alt="receta_alitas_paso3" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Cuarto paso</h5>
         <p>En una fuente ponemos la harina y, en este caso no tenía cereal y coloqué puré instantáneo (puede hacer solo con harina no hay problema; la única diferencia entre el cereal y el puré instantáneo es lo crocante y quedan más sequitas las alitas)...</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/alitas_paso6.webp" alt="receta_alitas_paso4" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/alitas_paso6.webp" alt="receta_alitas_paso4" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Quinto paso</h5>
         <p>...rebozamos y dejamos descansar en un freezer o congelador 20 minutos.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/alitas_paso7.webp" alt="receta_alitas_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/alitas_paso8.webp" alt="receta_alitas_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/alitas_paso7.webp" alt="receta_alitas_paso5" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/alitas_paso8.webp" alt="receta_alitas_paso5" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Sexto paso</h5>
         <p>Luego de sacar las alitas del freezer, fritamos unos diez minutos o el punto que usted desee.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/alitas_paso9.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/alitas_paso10.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/alitas_paso11.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/alitas_paso9.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/alitas_paso10.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/alitas_paso11.webp" alt="receta_alitas_paso_final" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>`;
 
         return esqueletoReceta("alitas-fritas.jpg", "alitas fritas", "40 minutos", 4,
@@ -161,22 +161,22 @@ const contenedorModales = [
         <h5>Primer paso</h5>
         <p>Cortar las papas en bastón, fritar hasta cocinarlas, no dejar que se doren demasiado.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/gramajo_paso1.webp" alt="receta_gramajo_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/gramajo_paso1.webp" alt="receta_gramajo_paso1" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Segundo paso</h5>
         <p>Rehogar la cebolla con un chorrito de aceite. Agregar el jamón cortado en tiras y las arvejas.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/gramajo_paso2.webp" alt="receta_gramajo_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/gramajo_paso2.webp" alt="receta_gramajo_paso2" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
         <h5>Tercer paso</h5>
         <p>En un bol mezclar los huevos con la crema ligeramente. Incorporar a la preparación anterior, junto con las papas fritas.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/gramajo_paso3.webp" alt="receta_gramajo_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/gramajo_paso3.webp" alt="receta_gramajo_paso3" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Cuarto paso</h5>
         <p>Cocinar unos minutos más hasta que los huevos se cocinen. Servir y ¡a disfrutar! 🤤</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/gramajo_paso4.webp" alt="receta_gramajo_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/gramajo_paso4.webp" alt="receta_gramajo_paso_final" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         `;
 
@@ -195,22 +195,22 @@ const contenedorModales = [
         <h5>Primer paso</h5>
         <p>Saltear la cebolla en la manteca, agregar el jamón cocido y los champiñones.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso1.webp" alt="receta_ficrecha_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso1-2.webp" alt="receta_ficrecha_paso1-2" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso1-3.webp" alt="receta_ficrecha_paso1-3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso1.webp" alt="receta_ficrecha_paso1" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso1-2.webp" alt="receta_ficrecha_paso1-2" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso1-3.webp" alt="receta_ficrecha_paso1-3" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Segundo paso</h5>
         <p>Agregar a la olla/sartén los fideos previamente hervidos. Luego agregar el caldo, seguido de pizca de sal y pimienta (ir probando). Agregar la crema, el agua y revolver.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso2.webp" alt="receta_ficrecha_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso2-2.webp" alt="receta_ficrecha_paso2-2" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso2-3.webp" alt="receta_ficrecha_paso2-3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso2.webp" alt="receta_ficrecha_paso2" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso2-2.webp" alt="receta_ficrecha_paso2-2" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso2-3.webp" alt="receta_ficrecha_paso2-3" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         <h5>Tercer paso</h5>
         <p>Cocinar a fuego medio bajo con ella tapada hasta que la pasta está en su punto (depende de cada pasta el tiempo). Es importante ir revolviendo cada tanto y controlar que no falte el líquido. Servir con queso rallado por encima.</p>
         <div class="d-flex justify-content-center gap-2 container-img-pasos">
-            <img src="../assets/img-recipes/fideoscremachampiñones_paso3.webp" alt="receta_ficrecha_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
-            <img src="../assets/img-recipes/fideoscremachampiñones_pasofinal.webp" alt="receta_ficrecha_pasofinal" class="rounded img-steps-recipe" width="100px" height="100px" />
+            <img src="../assets/img-recipes/fideoscremachampiñones_paso3.webp" alt="receta_ficrecha_paso3" class="rounded img-steps-recipe" width="100px" height="100px">
+            <img src="../assets/img-recipes/fideoscremachampiñones_pasofinal.webp" alt="receta_ficrecha_pasofinal" class="rounded img-steps-recipe" width="100px" height="100px">
         </div>
         `;
         return esqueletoReceta("img-recipes/fideoscremachampiñones_pasofinal.webp", "fideos con crema y champiñones", "25 minutos", 4,
@@ -231,65 +231,65 @@ const contenedorModales = [
         <h5>Primer paso</h5>
             <p>En un bowls ponemos, la harina, los huevos, el aceite, la esencia de vainilla y mezclamos. Lo pueden hacer con batidora, yo preferí hacerlo con un tenedor.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso1.webp" alt="receta_tartabanana_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso1.webp" alt="receta_tartabanana_paso1" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Segundo paso</h5>
             <p>Agregamos la harina y vamos uniendo bien todos los ingredientes. Nos va a quedar una masa media arenosa, así que vamos a llevar a la mesada y vamos a amasar unos 2 minutos hasta que nos quede bien unida y suave. Dejamos descansar la masa por 15 minutos preparamos la crema.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso2.webp" alt="receta_tartabanana_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso2-2.webp" alt="receta_tartabanana_paso2-2" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso2-3.webp" alt="receta_tartabanana_paso2-3" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso2.webp" alt="receta_tartabanana_paso2" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso2-2.webp" alt="receta_tartabanana_paso2-2" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso2-3.webp" alt="receta_tartabanana_paso2-3" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Tercer paso</h5>
             <p>En un bolws ponemos el pote de crema y batimos un poco a velocidad baja, agregamos las 3 cucharadas soperas de azúcar impalpable y las 2 cucharaditas de esencia de vainilla y seguimos batiendo, si quieren ahí pueden subir la velocidad. Una vez que esté firme llevar a la heladera.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso3.webp" alt="receta_tartabanana_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso3.webp" alt="receta_tartabanana_paso3" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Cuarto paso</h5>
             <p>Prendemos el horno a fuego mínimo, enmantecamos un molde y volvemos a la masa.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso4.webp" alt="receta_tartabanana_paso4" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso4.webp" alt="receta_tartabanana_paso4" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Quinto paso</h5>
             <p>Con un poco de harina en la mesada, o papel manteca vamos a estirar la mesa, si se rompe no importa, se arregla. Acomodamos la masa en el molde, pinchamos con tenedor y cocinamos unos 15/20 minutos (cuando esté dorada la masa la sacamos y dejamos enfriar)</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso5.webp" alt="receta_tartabanana_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso5-2.webp" alt="receta_tartabanana_paso5-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso5.webp" alt="receta_tartabanana_paso5" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso5-2.webp" alt="receta_tartabanana_paso5-2" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Sexto paso</h5>
             <p>Cortamos las bananas en rodajas finas y reservamos. Por otro lado rallamos 3 o 4 barritas de chocolate y vamos a reservar también.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso6.webp" alt="receta_tartabanana_paso6" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso6-2.webp" alt="receta_tartabanana_paso6-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso6.webp" alt="receta_tartabanana_paso6" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso6-2.webp" alt="receta_tartabanana_paso6-2" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Septimo paso</h5>
             <p>Pegamos la tarta a la bandeja o plato que usemos con un poco de dulce de leche para prevenir algún accidente y se resbale de la bandeja.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso7.webp" alt="receta_tartabanana_paso7" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso7.webp" alt="receta_tartabanana_paso7" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Octavo paso</h5>
             <p>Ponemos una buena capa de dulce de leche y acomodamos las bananas 🍌.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso8.webp" alt="receta_tartabanana_paso8" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso8-2.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso8-3.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso8.webp" alt="receta_tartabanana_paso8" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso8-2.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso8-3.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Noveno paso</h5>
             <p>Ponemos la crema 😋.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso9.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso9-2.webp" alt="receta_tartabanana_paso9-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso9.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso9-2.webp" alt="receta_tartabanana_paso9-2" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Decimo paso</h5>
             <p>Por último, rallamos el chocolate en barrita a gusto sobre la crema.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso10.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/img-recipes/tartabanana_paso10-2.webp" alt="receta_tartabanana_paso9-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso10.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px">
+                <img src="../assets/img-recipes/tartabanana_paso10-2.webp" alt="receta_tartabanana_paso9-2" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
             <h5>Paso 11</h5>
             <p>Finalmente, dejar enfríar la tarta en la heladera para que se asienten los ingredientes hasta servir.</p>
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
-                <img src="../assets/img-recipes/tartabanana_paso11.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/img-recipes/tartabanana_paso11.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px">
             </div>
         `;
         return esqueletoReceta("img-recipes/tartabanana_principal.webp", "tarta de banana principal", "1 hora", 6,

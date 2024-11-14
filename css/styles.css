@@ -3,79 +3,98 @@
 @import url('https://fonts.cdnfonts.com/css/molendra');
 @import url('https://fonts.cdnfonts.com/css/pacifico');
 @import url('https://fonts.cdnfonts.com/css/balleny');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
-    --background: #2C2C2C;
-    --linkedin: #0A66C2;
-    --github: #ebebeb;
-    --twitter: #1D9BF0;
+    --background: rgb(44, 44, 44);
+    --linkedin: rgb(10, 102, 194);
+    --github: rgb(235, 235, 235);
+    --twitter: rgb(29, 155, 240);
 }
+
 .bg-orange{
     background-color: rgb(255, 160, 44);
 }
+
 .gap-10{
     gap: 10vw;
 }
+
 .text-disabled{
     font-weight: 100;
     color: rgb(77, 77, 77)!important;
 }
+
 .text-disabled:hover{
     background-color: transparent!important;
 }
+
 .text-active{
     font-weight: 500;
     color: rgb(235, 235, 235);
 }
+
 .text-molendra{
-    font-family: 'Molendra', sans-serif;
+    font-family: Molendra, sans-serif;
 }
+
 .text-pacifico{
-    font-family: 'Pacifico', sans-serif;
+    font-family: Pacifico, sans-serif;
 }
+
 .text-balleny{
-    font-family: 'Balleny', sans-serif;
+    font-family: Balleny, sans-serif;
 }
 
 .red-custom{
-    color: #DA2B1F;
+    color: rgb(218, 43, 31);
 }
+
 .content{
     padding: 30px;
 }
+
 .sticky{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
+
 .sticky + .content {
     padding-top: 60px;
 }
+
 .navbar{
     z-index: 2;
 }
+
 .width-95{
     width: 95%!important;
 }
+
 .img-steps-recipe:hover{
     cursor: pointer;
 }
-.toggleZIndex{
+
+.toggle-z-index{
     z-index: 1050;
 }
+
 .overlay{
     width:100%;
     height:100%;
     position:absolute;
-    background-color:#000000;
-    opacity:0.5;
+    background-color:rgb(24, 24, 24);
+    opacity: 0.5;
     border-radius:30px;
 }
+
 /* ----- Header ----- */
 #header-image{
     width: 100%;
@@ -85,48 +104,71 @@
     background-position-y: 5%;
     background-repeat: no-repeat;
 }
+
 #header-image > h1{
     color: white;
     position: absolute;
     top: 115px;
     left: 125px;
-    font-family: 'Hastro', sans-serif;
+    font-family: Hastro, sans-serif;
     font-size: 64px;
 }
+
 #container-navlogo > a{
     display: flex;
     gap: 0.5vw;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
-#container-navlogo > a:link{
-    text-decoration: none;
+
+.col-12 p:nth-child(2){
+    margin-top: 20px;
 }
+
 #container-navlogo p{
     margin-bottom: 0;
     padding-top: 8px;
     font-size: 19px;
 }
+
 #contenedor-textmenu .nav-link{
     font-size: 19px;
     color: rgb(255, 255, 255);
     border-radius: 8px;
 }
-#contenedor-textmenu .nav-link:hover,
-#container-navlogo p:hover{
-    color: #272727;
+
+.social-media-button img {
+    transition: all 0.3s;
 }
-#contenedor-svglogo > img:hover{
-    cursor: pointer;
+
+.icon-git img{
+    width: 44px;
+    height: 44px;
+    padding: 4px;
 }
-.navlogo-img{
-    width: 35px;
-    height: 40px;
+
+.carousel-item > img{
+    filter: brightness(50%);
 }
+
+.social-media-button:hover img {
+    transform: scale(1.15);
+}
+
 #contenedor-svglogo > img,
 #container-navlogo p{
     border-radius: 8px;
 }
+
+#imagen-principal > img{
+    width: 65vw;
+}
+
+.navlogo-img{
+    width: 35px;
+    height: 40px;
+}
+
 .offcanvas, .modal, .fade{
     transition: ease-in-out 0.35s;
 }
@@ -136,6 +178,7 @@
     background-color: rgb(221, 139, 38);
     stroke: black;
 }
+
 .offcanvas-body{
     padding-top: 180px;
     padding-right: 6vw;
@@ -146,12 +189,15 @@
     font-weight: 600;
     font-size: 18px;
 }
+
 .offcanvas-body form {
     margin-bottom: 18px;
 }
+
 #offcanvas-buttons{
     margin-left: 0.25vw;
 }
+
 .btn-98 {
     background-image: none;
     margin-bottom: 10px;
@@ -160,15 +206,10 @@
     border-left: none;
     color: rgb(231, 143, 36);
     border-bottom: 3px solid rgb(255, 174, 74);
+
     --thickness: 3px;
+
     box-sizing: border-box;
-    background: none;
-    -webkit-clip-path: polygon(
-        0 0,
-        100% 0,
-        100% calc(100% + var(--thickness)),
-        0 calc(100% + var(--thickness))
-    );
     clip-path: polygon(
         0 0,
         100% 0,
@@ -181,7 +222,8 @@
     position: relative;
     text-transform: uppercase;
 }
-.btn-98:before {
+
+.btn-98::before {
     background: white;
     bottom: calc(var(--thickness) * -1);
     content: "";
@@ -190,55 +232,59 @@
     position: absolute;
     width: 100%;
 }
-.btn-98:hover:before {
-    -webkit-animation: slide 0.5s ease;
+
+.btn-98:hover::before {
     animation: slide 0.5s ease;
 }
+
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
+
     50% {
         transform: translateX(100%);
     }
+
     51% {
         transform: translateX(-100%);
     }
-    to {
+
+    100% {
         transform: translateX(0);
     }
 }
+
 /* ----- Main ----- */
+
 body{
     background-image: url("../assets/background-repeat.jpg");
     background-repeat: repeat;
     background-size: 650px;
 }
+
 #imagen-principal{
     display: flex;
     justify-content: center;
 }
-#imagen-principal > img{
-    width: 65vw;
-}
+
 #main-carrousel > h2{
     margin-top: 15px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 55px;
 }
+
 #contenedor-carrousel,
 #imagen-principal,
 #main-video{
-    margin: 35px 0px 35px 0px;
+    margin: 35px auto;
 }
 
 .carousel-item{
     transition: linear .30s;
 }
-.carousel-item > img{
-    filter: brightness(50%);
-}
+
 .comida-veg,
 .comida-ita,
 .comida-arg,
@@ -246,11 +292,13 @@ body{
     border-radius: 5px;
     height: 500px;
 }
+
 #contenedor-quecocinar-titulo{
     gap: 20px;
 }
-#mainCards{
-    margin: 25px 0px 25px 0px;
+
+#main-cards{
+    margin: 25px initial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,50 +307,81 @@ body{
     padding-left: 20vw;
     padding-right: 20vw;
 }
-#mainCards .card{
+
+#main-cards .card{
     width: 13vw;
     transition: all 0.35s;
 }
-#mainCards .card:hover{
+
+#contenedor-cards-recetas .card{
+    width: 15vw;
+    height: 325px;
+    transition: all 0.45s;
+}
+
+#main-cards .card:hover{
     cursor: pointer;
     transform: scale(1.03);
 }
-#mainCards .card-img-top{
+
+#main-cards .card-img-top{
     width: auto;
     height: 200px;
 }
-#mainCards .card > .card-body{
+
+#contenedor-cards-recetas .card-body{
+    text-align: center;
+    padding-top: 5px;
+}
+
+#main-cards .card > .card-body{
     display: flex;
     gap: 20px;
     padding-bottom: 10px;
 }
-#mainCards .card > .card-body h5{
+
+#contenedor-cards-recetas .card-body h5{
+    font-size: 18px;
+}
+
+#main-cards .card > .card-body h5{
     font-size: 15px;
 }
+
 #main-video > h3{
     text-align: center;
     margin-bottom: 35px;
 }
+
 #main-video iframe{
     width:670px;
     height:375px;
-    border: 4px solid #252525;
+    border: 4px solid rgb(37, 37, 37);
     border-radius: 8px;
 }
+
 /* ----- Footer ----- */
+
 #contenedor-footer{
     height: 300px;
     padding-top: 50px;
 }
+
 #container-logofooter > a{
     display: flex;
     gap: 0.5vw;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
+
+#container-navlogo > a:link{
+    text-decoration: none;
+}
+
 #container-logofooter > a:link{
     text-decoration: none;
 }
+
 #container-logofooter p{
     margin-bottom: 0;
     padding-top: 8px;
@@ -310,15 +389,36 @@ body{
     transition: all 0.45s;
     font-size: 24px;
 }
+
+#footer-nombre > p{
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+#contenedor-texto-quienessomos p{
+    font-size: 17px;
+}
+
+#contenedor-textmenu .nav-link:hover,
+#container-navlogo p:hover{
+    color: rgb(39, 39, 39);
+}
+
+#footer-nombre .text-balleny{
+    transition: all 0.45s;    
+}
+
 #container-logofooter p:hover,
 #footer-nombre .text-balleny:hover{
-    color: #272727;
+    color: rgb(39, 39, 39);
     cursor: pointer;
 }
+
 #contenedor-footer .col-4{
     display: flex;
     justify-content: center;
 }
+
 .social-media-buttons{
     display: flex;
     justify-content: end;
@@ -326,6 +426,7 @@ body{
     gap: 24px;
     margin-right: 5vw;
 }
+
 .social-media-button{
     width: 48px;
     height: 48px;
@@ -336,143 +437,132 @@ body{
     display: grid;
     place-items: center;
 }
+
 .social-media-button:hover {
     outline-offset: 3px;
     transition: all 0.3s;
 }
-.social-media-button img {
-    transition: all 0.3s;
-}
-.social-media-button:hover img {
-    transform: scale(1.15);
-}
+
 .social-media-button:hover:nth-child(1) {
     background:  radial-gradient(
-        circle at 30% 107%, #fdf497 0%, 
-        #fdf497 5%, #fd5949 45%,
-        #d6249f 60%,#285AEB 90%
+        circle at 30% 107%, rgb(253 244 151) 0%, 
+        rgb(253 244 151) 5%, rgb(253 89 73) 45%,
+        rgb(214 36 159) 60%,rgb(40 90 235) 90%
     ); 
 }
+
 .social-media-button:hover:nth-child(2) {
     background-color: var(--twitter);
 }
+
 .social-media-button:hover:nth-child(3) {
     background-color: var(--background);
 }
+
 .social-media-button:hover:nth-child(4) {
     background-color: var(--linkedin);
 }
-.icon-git img{
-    width: 44px;
-    height: 44px;
-    padding: 4px;
+
+#contenedor-svglogo > img:hover{
+    cursor: pointer;
 }
+
 #contenedor-footer .col-12{
     padding-left: 11vw;
     margin-top: 20px;
     font-weight: 500;
 }
-.col-12 p:nth-child(2){
-    margin-top: 20px;
-}
+
 #footer-nombre{
     display: flex;
     justify-content: end;
     padding-right: 5vw;
 }
-#footer-nombre > p{
-    margin-bottom: 0;
-    color: rgb(255, 255, 255);
-}
-#footer-nombre .text-balleny{
-    transition: all 0.45s;    
-}
+
+
+
 /* ----- Recetas ----- */
+
 #contenedor-main h2{
     font-size: 40px;
     margin-top: 35px;
     margin-bottom: 35px;
     margin-left: 35px;
 }
+
 .divisor{
     width: 17vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid rgb(207, 207, 207);
 }
-#buscadorContainer {
+
+#buscador-container {
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-#buscadorInput{
+
+#buscador-input{
     height: 35px;
     width: 12vw;
     border-radius: 10px;
     margin-top: 2px;
 }
-#containerControlsCards{
+
+#container-control-cards{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 325px;
     margin-left: 2vw;
-    padding: 2vw 40px 2vw 40px;
+    padding: 2vw 40px;
     border-style: solid;
     border-width: 1px;
-    border-color: #adadad;
+    border-color: rgb(207, 207, 207);
     border-radius: 5px;
-    background-color: #f5f5f5;
+    background-color: rgb(245, 245, 245);
 }
-#contenedorPaginacion{
+
+#contenedor-paginacion{
     display: flex;
     margin-top: 75px;
     margin-bottom: 75px;
     gap: 10vw;
     justify-content: center;
 }
-#contenedorCardsR .card{
-    width: 15vw;
-    height: 325px;
-    transition: all 0.45s;
-}
-#contenedorCardsR .card:hover{
+
+#contenedor-cards-recetas .card:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
-#contenedorCardsR .card-img-top{
+
+#contenedor-cards-recetas .card-img-top{
     width: 14.9vw;
     height: 225px;
 }
-#contenedorCardsR .card-body{
-    text-align: center;
-    padding-top: 5px;
-}
-#contenedorCardsR .card-body h5{
-    font-size: 18px;
-}
+
 /* ----- Contacto ----- */
 
-#contenedorContactoImg{
+#contenedor-contacto-img{
     padding-left: 80px;
 }
-#imgContactanos{
+
+#img-contactanos{
     width: 550px;
     border-radius: 8px;
 }
 
-#titleForm, #titleMap{
+#title-form, #title-map{
     font-size: 40px;
 }
-#formContacto{
+
+#form-contacto{
+    background-color: rgba(255 255 255 / 50%);
     margin-top: 40px;
 }
 
-.text-label-form{
-    color: #575555;
-}
-
-#contenedorFormBoton{
+#contenedor-form-boton{
     margin-top: 20px;
     display: flex;
     justify-content: end;
@@ -483,19 +573,19 @@ body{
 .reset-pl{
     padding-left: 0;
 }
-#imgAcercaDe{
+
+#img-acercade{
     width: 40vw;
 }
-#contenedorTextoQuienesSomos p{
-    font-size: 17px;
-}
-#contenedorMap{
+
+#contenedor-map{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 35px;
 }
-#mapContacto{
+
+#map-contacto{
     width: 50%;
     height: 350px;
 }

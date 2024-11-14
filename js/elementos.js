@@ -11,7 +11,7 @@
 *   @returns {HTMLDivElement} Referencia del *HTMLElement* modal diseñado.
 */
 const crearModal = (numReceta, elementsModalBody, tituloReceta) => {
-    let id = `modalReceta${numReceta}`;
+    let id = `modal-receta-${numReceta}`;
     const mainModal = createElementCustom("div", ["modal", "fade"], "", {
         "data-bs-keyboard": "false",
         "data-bs-backdrop": "static",
@@ -63,7 +63,7 @@ const modalFooter = () => {
 const crearModalButton = (numReceta) => {
     return createElementCustom("button", ["btn", "btn-primary"], `Receta N° ${numEjercicio}`, { 
     "data-bs-toggle": "modal",
-    "data-bs-target": `#modalReceta${numReceta}`
+    "data-bs-target": `#modal-receta-${numReceta}`
     });
 }
 /**

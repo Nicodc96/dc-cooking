@@ -77,66 +77,66 @@
         <section id="contenedor-main">
             <h2 class="text-center fw-lighter text-pacifico red-custom">Todas nuestras recetas</h2>
             <div class="row width-95">
-                <div class="col-3" id="colControlCards">
-                    <div id="containerControlsCards">
-                        <form id="buscadorContainer">
-                            <input id="buscadorInput" class="form-control" type="text" placeholder="Búsqueda por nombre">
+                <div class="col-3" id="col-control-cards">
+                    <div id="container-control-cards">
+                        <form id="buscador-container">
+                            <input id="buscador-input" class="form-control" type="text" placeholder="Búsqueda por nombre">
                             <button type="submit" class="btn btn-primary">
                                 <img src="../assets/svg/lupa-blanca.svg" alt="lupa-blanca">
                             </button>
                         </form>
                         <div class="divisor"></div>
-                        <Button class="btn btn-success">Registrar una receta</Button>
+                        <button class="btn btn-success">Registrar una receta</button>
                         <div class="divisor"></div>
                         <p class="text-center fs-5">Ordenar según:</p>
-                        <div id="contenedorCheckBoxOrdenar">
+                        <div id="contenedor-checkbox-ordenar">
                                 <div class="row">
                                     <div class="col-2 d-flex flex-column gap-1">
-                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chkOrdenarAZ">
-                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chkOrdenarZA">
-                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chkOrdenarCategoria">
-                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chkOrdenarDificultad">
+                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chk-ordenar-az">
+                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chk-drdenar-za">
+                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chk-ordenar-categoria">
+                                    <input type="radio" class="form-check-input" name="radioOrdenamiento" id="chk-ordenar-dificultad">
                                 </div>
                                 <div class="col-10 d-flex flex-column">
-                                    <label for="chkOrdenarAZ" class="form-check-label">Alfabeto (A-Z)</label>
-                                    <label for="chkOrdenarZA" class="form-check-label">Alfa. Invertido (Z-A)</label>
-                                    <label for="chkOrdenarCategoria" class="form-check-label">Categoría</label>
-                                    <label for="chkOrdenarDificultad" class="form-check-label">Tiempo Elaboración</label>
+                                    <label for="chk-ordenar-az" class="form-check-label">Alfabeto (A-Z)</label>
+                                    <label for="chk-drdenar-za" class="form-check-label">Alfa. Invertido (Z-A)</label>
+                                    <label for="chk-ordenar-categoria" class="form-check-label">Categoría</label>
+                                    <label for="chk-ordenar-dificultad" class="form-check-label">Tiempo Elaboración</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-9 d-flex gap-3 flex-wrap justify-content-center" id="contenedorCardsR">
-                    <div class="card" id="budinConArandanos" data-bs-toggle="modal" data-bs-target="#modalReceta1">
+                <div class="col-9 d-flex gap-3 flex-wrap justify-content-center" id="contenedor-cards-recetas">
+                    <div class="card" id="receta-budinarandanos" data-bs-toggle="modal" data-bs-target="#modal-receta-1">
                         <img src="../assets/budin-arandanos.webp" class="card-img-top" alt="budin de arandanos">
                         <div class="card-body">
                             <img src="../assets/svg/lupa-zoom.svg" alt="lupa-zoom">
                             <h5 class="card-title">Budín con arándanos</h5>
                         </div>
                     </div>
-                    <div class="card" id="alitasFritas" data-bs-toggle="modal" data-bs-target="#modalReceta2">
+                    <div class="card" id="receta-alitasfritas" data-bs-toggle="modal" data-bs-target="#modal-receta-2">
                         <img src="../assets/alitas-fritas.jpg" class="card-img-top" alt="alitas fritas">
                         <div class="card-body">
                             <img src="../assets/svg/lupa-zoom.svg" alt="lupa-zoom">
                             <h5 class="card-title">Alitas fritas super crujientes</h5>
                         </div>
                     </div>
-                    <div class="card" id="revueltoGramajo" data-bs-toggle="modal" data-bs-target="#modalReceta3">
+                    <div class="card" id="receta-revueltogramajo" data-bs-toggle="modal" data-bs-target="#modal-receta-3">
                         <img src="../assets/img-recipes/gramajo_paso4.webp" class="card-img-top" alt="revuelto gramajo">
                         <div class="card-body">
                             <img src="../assets/svg/lupa-zoom.svg" alt="lupa-zoom">
                             <h5 class="card-title">Revuelto de gramajo</h5>
                         </div>
                     </div>
-                    <div class="card" id="fideosCremaSetas" data-bs-toggle="modal" data-bs-target="#modalReceta4">
+                    <div class="card" id="receta-fideoscremasetas" data-bs-toggle="modal" data-bs-target="#modal-receta-4">
                         <img src="../assets/img-recipes/fideoscremachampiñones_pasofinal.webp" class="card-img-top" alt="revuelto gramajo">
                         <div class="card-body">
                             <img src="../assets/svg/lupa-zoom.svg" alt="lupa-zoom">
                             <h5 class="card-title">Fideos con crema, jamón y champiñones</h5>
                         </div>
                     </div>
-                    <div class="card" id="tartaBananaSplit" data-bs-toggle="modal" data-bs-target="#modalReceta5">
+                    <div class="card" id="receta-bananasplit" data-bs-toggle="modal" data-bs-target="#modal-receta-5">
                         <img src="../assets/img-recipes/tartabanana_principal.webp" class="card-img-top" alt="tarta de banana split">
                         <div class="card-body">
                             <img src="../assets/svg/lupa-zoom.svg" alt="lupa-zoom">
@@ -145,24 +145,24 @@
                     </div>
                 </div>
             </div>
-            <div id="contenedorModalsPasosRecetas">
-                <div class="modal fade" id="modalPasosReceta" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modalPasosRecetaBody" aria-hidden="true">
+            <div id="contenedor-modal-pasos-recetas">
+                <div class="modal fade" id="modal-pasos-recetas" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modal-pasos-receta-body" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                             </div>
-                            <div class="modal-body d-flex justify-content-center" id="modalPasosRecetaBody"></div>
+                            <div class="modal-body d-flex justify-content-center" id="modal-pasos-receta-body"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row width-95">
-                <div class="col-3" id="contenedorPaginacionRelleno"></div>
-                <div class="col-9" id="contenedorPaginacion">
-                    <Button class="btn btn-primary disabled fw-semibold">&lt;</Button>
+                <div class="col-3" id="contenedor-paginacion-relleno"></div>
+                <div class="col-9" id="contenedor-paginacion">
+                    <button class="btn btn-primary disabled fw-semibold">&lt;</button>
                     <p class="fw-semibold pt-1">Página: 1</p>
-                    <Button class="btn btn-primary disabled fw-semibold">></Button>
+                    <button class="btn btn-primary disabled fw-semibold">&gt;</button>
                 </div>
             </div>
         </section>

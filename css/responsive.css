@@ -1,123 +1,158 @@
 /* -------- index -------- */
-@media screen and (max-width:1400px) {
-    #mainCards{
+@media screen and (width <= 1400px) {
+    #main-cards{
         padding-left: 20vw;
         padding-right: 20vw;
     }
 }
-@media screen and (max-width:1335px) {
-    #mainCards{
+
+@media screen and (width <= 1335px) {
+    #main-cards{
         padding-left: 15vw;
         padding-right: 15vw;
     }
+
     .col-12 p{
         width: 60%;
     }
 }
-@media screen and (max-width:1255px) {
-    #mainCards .card{
+
+@media screen and (width <= 1255px) {
+    #main-cards .card{
         width: 16vw;
     }
 }
-@media screen and (max-width:1255px) {
-    #mainCards .card{
+
+@media screen and (width <= 1255px) {
+    #main-cards .card{
         width: 18vw;
     }
 }
-@media screen and (max-width:991px) {
+
+@media screen and (width <= 991px) {
     #contenedor-textmenu .nav-link{
         display: none;
     }
     
-    #mainCards .card{
+    #main-cards .card{
         width: 19vw;
     }
+
     #imagen-principal > img{
         width: 70vw;
     }
+
     #main-carrousel > h2{
         font-size: 50px;
     }
 }
-@media screen and (max-width:900px){
+
+@media screen and (width <= 900px){
     .offcanvas-body{
         padding-top: 215px;
     }
-    #mainCards .card{
+
+    #main-cards .card{
         width: 22vw;
     }
+
     #imagen-principal > img{
         width: 75vw;
     }
+
     #main-carrousel > h2{
         font-size: 45px;
     }
+
     .col-12 p{
         width: 80%;
     }
+
     #footer-nombre{
         justify-content: center;
         margin-top: 15px;
         padding-right: 0;
     }    
 }
-@media screen and (max-width:800px){
-    #mainCards .card{
+
+@media screen and (width <= 800px){
+    #main-cards .card{
         width: 22vw;
     }
+
     #imagen-principal > img{
         width: 80vw;
     }
+
     #main-carrousel > h2{
         font-size: 40px;
     }
+
 }
-@media screen and (max-width:768px) {
+
+@media screen and (width <= 768px) {
     .d-none{
         display: block!important;
     }
+
     .comida-veg,
     .comida-ita,
     .comida-arg,
     .comida-fran{
         height: 400px;
     }
+
     #contenedor-footer .col-4{
         padding-left: 2vw;
         width: 50%;
     }
+
     #contenedor-footer .col-8{
         width: 50%;
     }
 }
-@media screen and (max-width:750px) {
-    #mainCards .card{
+
+@media screen and (width <= 750px) {
+    #main-cards .card{
         width: 25vw;
     }
 }
-@media screen and (max-width:672px) {
+
+@media screen and (width <= 672px) {
     #header-image{
         background-size: 100% 300px;
     }
-    #mainCards .card{
+
+    #main-cards .card{
         width: 28vw;
     }
+
     #imagen-principal > img{
         width: 85vw;
     }
+
     #main-carrousel > h2{
         font-size: 37px;
     }
+
     #main-video iframe{
         width:580px;
         height:305px;
     }
+
     #contenedor-footer{
         height: 350px;
     }
+
+    .col-12 p{
+        width: 100%;
+        text-align: center;
+    }
+
     #container-logofooter p{
         margin-bottom: 20px;
     }
+
     #contenedor-footer .col-8,
     #contenedor-footer .col-4{
         display: flex;
@@ -125,311 +160,369 @@
         width: 94%;
         margin-left: 7vw;
     }
+
     .social-media-buttons{
         margin-right: 0;
     }
-    .col-12 p{
-        width: 100%;
-        text-align: center;
-    }
 }
-@media screen and (max-width:610px){
+
+@media screen and (width <= 610px){
     #header-image > h1{
         font-size: 50px;
         top: 135px;
         left: 80px;
     }
+
     .comida-veg,
     .comida-ita,
     .comida-arg,
     .comida-fran{
         height: 350px;
     }
+
     #contenedor-quecocinar-titulo{
         margin-left: 20vw;
     }
+
     #contenedor-texto-main-quecocinar > p{
         width: 70%;
     }
-    #mainCards .card{
+
+    #main-cards .card{
         width: 30vw;
     }
 }
-@media screen and (max-width:530px){
-    #mainCards .card{
+
+@media screen and (width <= 530px){
+    #main-cards .card{
         width: 45vw;
     }
+
     .comida-veg,
     .comida-ita,
     .comida-arg,
     .comida-fran{
         height: 300px;
     }
+
     #contenedor-quecocinar-titulo{
         margin-left: 15vw;
     }
+
     #main-quecocinar-cards > div{
         max-width: 80vw;
     }
+
     #main-carrousel > h2{
         font-size: 33px;
     }
 }
-@media screen and (max-width:518px){
+
+@media screen and (width <= 518px){
     #contenedor-footer{
         height: 400px;
     }
 }
-@media screen and (max-width:460px){
-    #mainCards .card{
+
+@media screen and (width <= 460px){
+    #main-cards .card{
         width: 50vw;
     }
+
     #header-image > h1{
         font-size: 46px;
         top: 135px;
         left: 50px;
     }
 }
-@media screen and (max-width:415px){
-    #mainCards > div{
+
+@media screen and (width <= 415px){
+    #main-cards > div{
         max-width: 80vw;
     }
-    #mainCards .card{
+
+    #main-cards .card{
         width: 50vw;
     }
+
     #contenedor-quecocinar-titulo{
         margin-left: 7vw;
     }
+
     #contenedor-texto-main-quecocinar > p{
         width: 100%;
     }
 }
-@media screen and (max-width:390px){
+
+@media screen and (width <= 390px){
     #header-image > h1{
         font-size: 30px;
         top: 100px;
         left: 35px;
     }
+    
     #header-image{
         height: 200px;
     }        
 }
-@media screen and (max-width:375px){
-    #mainCards .card{
+
+@media screen and (width <= 375px){
+    #main-cards .card{
         width: 60vw;
     }
 }
-@media screen and (max-width:320px){
-    #mainCards{
-        padding-left: 0vw;
-        padding-right: 0vw;
-    }
-    #mainCards .card{
+
+@media screen and (width <= 320px){
+    #main-cards .card{
         width: 70vw;
     }
-}
-@media screen and (max-width:305px){
+
     #main-carrousel > h2{
         font-size: 25px;
     }
+
     .comida-veg,
     .comida-ita,
     .comida-arg,
     .comida-fran{
         height: 200px;
     }
-    #mainCards .card,
-    #mainCardss .card-img-top{
+
+    #main-cards .card,
+    #main-cardss .card-img-top{
         width: 65vw;
     }
+
     .social-media-button{
         width: 32px;
         height: 32px;
     }
+
     .icon-git img{
         width: 28px;
         height: 28px;
     }
+
     #contenedor-footer{
         height: 440px;
     }
+
     #main-video iframe{
         width: 275px;
         height: 275px;
         
     }
 }
+
 /* -------- recetas -------- */
-@media screen and (max-width:1300px) {
-    #colControlCards{
+@media screen and (width <= 1300px) {
+    #col-control-cards{
         width: 30%;
     }
-    #contenedorCardsR{
+
+    #contenedor-cards-recetas{
         width: 70%;
     }
 }
-@media screen and (max-width:1200px) {
-    #colControlCards,
-    #contenedorPaginacionRelleno{
+
+@media screen and (width <= 1200px) {
+    #col-control-cards,
+    #contenedor-paginacion-relleno{
         width: 35%;
     }
-    #contenedorCardsR,
-    #contenedorPaginacion{
+
+    #contenedor-cards-recetas,
+    #contenedor-paginacion{
         width: 65%;
     }
-    #contenedorCardsR .card{
+
+    #contenedor-cards-recetas .card{
         height: 300px;
     }
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card-img-top{
         height: 200px;
     }
 }
-@media screen and (max-width:1100px) {
-    #contenedorCardsR .card{
+
+@media screen and (width <= 1100px) {
+    #contenedor-cards-recetas .card{
         width: 18vw;
     }
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card-img-top{
         width: 17.9vw;
     }
 }
 
-@media screen and (max-width:991px){
-    #modalReceta2 .img-top-modal, #modalReceta5 .img-top-modal{
+@media screen and (width <= 991px){
+    #modal-receta-2 .img-top-modal, 
+    #modal-receta-5 .img-top-modal{
         width: 450px;
         height: 350px;
     }
 }
-@media screen and (max-width:910px){
-    #colControlCards,
-    #contenedorCardsR,
-    #contenedorPaginacion{
+
+@media screen and (width <= 910px){
+    #col-control-cards,
+    #contenedor-cards-recetas,
+    #contenedor-paginacion{
         width: 100%;
         margin-left: 5vw;
     }
-    #contenedorPaginacionRelleno{
+
+    #contenedor-paginacion-relleno{
         width: 0%;
     }
-    #contenedorCardsR,
-    #contenedorPaginacion{
+
+    #contenedor-cards-recetas,
+    #contenedor-paginacion{
         margin-left: 6vw;
     }
-    #colControlCards{
+
+    #col-control-cards{
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
     }
-    #containerControlsCards{
+
+    #container-control-cards{
         width: 50vw;
     }
-    #containerControlsCards > *,
-    #buscadorInput{
+
+    #container-control-cards > *,
+    #buscador-input{
         width: 30vw;
     }
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 25vw;
     }
 }
-@media screen and (max-width:800px){
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+@media screen and (width <= 800px){
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 28vw;
     }
 }
-@media screen and (max-width:635px) {
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+@media screen and (width <= 635px) {
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 30vw;
     }
 }
-@media screen and (max-width:600px){
-    #containerControlsCards{
+
+@media screen and (width <= 600px){
+    #container-control-cards{
         width: 60vw;
     }
-    #containerControlsCards > *,
-    #buscadorInput{
+
+    #container-control-cards > *,
+    #buscador-input{
         width: 40vw;
     }
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 35vw;
     }
 }
-@media screen and (max-width:530px){
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+@media screen and (width <= 530px){
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 40vw;
     }
 }
-@media screen and (max-width:500px){
-    #contenedorPaginacion > *{
+
+@media screen and (width <= 500px){
+    #contenedor-paginacion > *{
         height: 40px;
         font-size: 14px;
     }
-    #modalReceta1 .img-top-modal{
+
+    #modal-receta-1 .img-top-modal{
         height: 400px;
         width: 400px;
     }
-    #modalReceta2 .img-top-modal, #modalReceta5 .img-top-modal{
+
+    #modal-receta-2 .img-top-modal, 
+    #modal-receta-5 .img-top-modal{
         height: 300px;
         width: 400px;
     }
 }
-@media screen and (max-width:454px){
+
+@media screen and (width <= 454px){
     #contenedor-main h2{
         font-size: 30px;
         margin-left: 10px;
     }
-    #containerControlsCards{
+
+    #container-control-cards{
         width: 70vw;
     }
-    #containerControlsCards > *,
-    #buscadorInput{
+
+    #container-control-cards > *,
+    #buscador-input{
         width: 50vw;
     }
-    #contenedorPaginacion{
+
+    #contenedor-paginacion{
         gap: 6vw;
     }
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 50vw;
     }
 }
-@media screen and (max-width:430px){
-    #modalReceta5 .img-top-modal{
+
+@media screen and (width <= 430px){
+    #modal-receta-5 .img-top-modal{
         width: 350px;
     }
 }
-@media screen and (max-width:415px){
-    #modalReceta1 .img-top-modal,
-    #modalReceta3 .img-top-modal,
-    #modalReceta4 .img-top-modal{
+
+@media screen and (width <= 415px){
+    #modal-receta-1 .img-top-modal,
+    #modal-receta-3 .img-top-modal,
+    #modal-receta-4 .img-top-modal{
         height: 350px;
         width: 350px;
     }
-    #modalReceta2 .img-top-modal{
+
+    #modal-receta-2 .img-top-modal{
         height: 200px;
         width: 350px;
     }
 }
-@media screen and (max-width:375px){
-    #containerControlsCards{
+
+@media screen and (width <= 375px){
+    #container-control-cards{
         width: 80vw;
     }
-    #containerControlsCards > *,
-    #buscadorInput{
+
+    #container-control-cards > *,
+    #buscador-input{
         width: 60vw;
     }
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 52vw;
     }
-    #modalReceta1 .img-top-modal{
+
+    #modal-receta-1 .img-top-modal{
         height: 300px;
         width: 300px;
     }
-    #modalReceta2 .img-top-modal, 
-    #modalReceta5 .img-top-modal{
+
+    #modal-receta-2 .img-top-modal, 
+    #modal-receta-5 .img-top-modal{
         width: 300px;
     }
     
@@ -438,242 +531,284 @@
         align-items: center;
     }
 }
-@media screen and (max-width:320px){
-    #containerControlsCards{
+
+@media screen and (width <= 320px){
+    #container-control-cards{
         width: 90vw;
     }
-    #containerControlsCards > *{
+
+    #container-control-cards > *{
         width: 70vw;
     }
-    #buscadorInput{
+
+    #buscador-input{
         width: 60vw;
     }
-    #contenedorCardsR .card,
-    #contenedorCardsR .card-img-top{
+
+    #contenedor-cards-recetas .card,
+    #contenedor-cards-recetas .card-img-top{
         width: 65vw;
     }
-    #contenedorCardsR{
+
+    #contenedor-cards-recetas{
         width: 100%;
         margin-left: 7vw;
     }
-    #modalReceta1 .img-top-modal, 
-    #modalReceta5 .img-top-modal{
+
+    #modal-receta-1 .img-top-modal, 
+    #modal-receta-5 .img-top-modal{
         height: 270px;
         width: 270px;
     }
-    #modalReceta2 .img-top-modal{
+
+    #modal-receta-2 .img-top-modal{
         width: 250px;
     }
 }
+
 /* -------- contacto -------- */
-@media screen and (max-width:1400px) {
-    #contenedorContactoImg{
+@media screen and (width <= 1400px) {
+    #contenedor-contacto-img{
         padding-left: 10px;
     }
 }
-@media screen and (max-width:1250px) {
-    #imgContactanos{
+
+@media screen and (width <= 1250px) {
+    #img-contactanos{
         width: 500px;
     }
-    #contenedorContactoForm{
-        width: 70vw;
-    }
+
     .input-custom{
         width: 29.5vw;
     }
 }
-@media screen and (max-width:1140px) {
-    #imgContactanos{
+
+@media screen and (width <= 1140px) {
+    #img-contactanos{
         width: 425px;
     }
-    #contenedorContactoForm{
-        width: 85vw;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    #titleForm{
-        margin-top: 0px!important;
+
+    #title-form{
+        margin-top: auto !important;
     }
 }
-@media screen and (max-width:991px) {
-    #contenedorContactoImg{
+
+@media screen and (width <= 991px) {
+    #contenedor-contacto-img{
         display: flex;
         justify-content: center;
     }
-    #imgContactanos{
+
+    #img-contactanos{
         width: 500px;
     }
-    #contenedorFormContacto{
+
+    #contenedor-form-contacto{
         background-color: transparent!important;
     }
-    #formContacto{
-        background-color: rgba(255, 255, 255, 0.5);
+
+    #form-contacto{
         border-radius: 8px;
         margin-left: 15vw;
         margin-right: 15vw;
         padding: 5px;
     }
 }
-@media screen and (max-width:850px) {
-    #formContacto{
+
+@media screen and (width <= 850px) {
+    #form-contacto{
         margin-left: 10vw;
         margin-right: 10vw;
     }
 }
-@media screen and (max-width:700px) {
-    #formContacto{
+
+@media screen and (width <= 700px) {
+    #form-contacto{
         margin-left: 7vw;
         margin-right: 7vw;
     }
 }
-@media screen and (max-width:600px) {
-    #formContacto{
-        margin-left: 0vw;
-        margin-right: 0vw;
+
+@media screen and (width <= 600px) {
+    #form-contacto{
+        margin-left: auto;
+        margin-right: auto;
     }
-    #contenedorContacto{
+
+    #contenedor-contacto{
         width: 100vw;
     }
+
     .floatlabel,
-    #inputTextArea{
+    #input-text-area{
         font-size: 1em;
     }
 }
-@media screen and (max-width:550px) {
-    #formContacto{
+
+@media screen and (width <= 550px) {
+    #form-contacto{
         height: 420px;
     }
-    #inputTextArea{
+
+    #input-text-area{
         margin-top: 10px;
     }
 }
-@media screen and (max-width:500px) {
-    #imgContactanos{
+
+@media screen and (width <= 500px) {
+    #img-contactanos{
         width: 400px;
     }
 }
-@media screen and (max-width:440px) {
-    #contenedorFormContacto{
-        padding-bottom: 0!important;
-        padding-left: 0!important;
-        padding-right: 0!important;
+
+@media screen and (width <= 440px) {
+    #contenedor-form-contacto{
+        padding-bottom: initial !important;
+        padding-left: initial !important;
+        padding-right: initial !important;
     }
-    #imgContactanos{
+
+    #img-contactanos{
         width: 375px;
     }
-    #titleForm{
+
+    #title-form{
         font-size: 30px;
     }
 }
-@media screen and (max-width:400px) {
-    #imgContactanos{
+
+@media screen and (width <= 400px) {
+    #img-contactanos{
         width: 325px;
     }
 }
-@media screen and (max-width:350px) {
-    #imgContactanos{
+
+@media screen and (width <= 350px) {
+    #img-contactanos{
         width: 300px;
     }
 }
-@media screen and (max-width:300px) {
-    #imgContactanos{
+
+@media screen and (width <= 300px) {
+    #img-contactanos{
         width: 280px;
     }
 }
+
 /* -------- acerca de -------- */
-@media screen and (max-width: 1440px){
-    #titleQuienesSomos{
+@media screen and (width <= 1440px){
+    #title-quienessomos{
         margin-top: 10px!important;
     }
-    #imgAcercaDe{
+
+    #img-acercade{
         width: 42vw;
     }
 }
-@media screen and (max-width: 1400px){
-    #imgAcercaDe{
+
+@media screen and (width <= 1400px){
+    #img-acercade{
         width: 44vw;
     }
 }
-@media screen and (max-width: 1350px){
-    #imgAcercaDe{
+
+@media screen and (width <= 1350px){
+    #img-acercade{
         height: 450px;
     }
-    #mapContacto{
+
+    #map-contacto{
         width: 70%;
     }
 }
-@media screen and (max-width: 1270px){
-    #imgAcercaDe{
+
+@media screen and (width <= 1270px){
+    #img-acercade{
         height: 460px;
     }
 }
-@media screen and (max-width: 1115px){
-    #imgAcercaDe{
+
+@media screen and (width <= 1115px){
+    #img-acercade{
         height: 480px;
     }
 }
-@media screen and (max-width: 1093px){
-    #imgAcercaDe{
+
+@media screen and (width <= 1093px){
+    #img-acercade{
         height: 510px;
     }
 }
-@media screen and (max-width: 1012px){
-    #imgAcercaDe{
+
+@media screen and (width <= 1012px){
+    #img-acercade{
         height: 535px;
     }
 }
-@media screen and (max-width: 991px){
-    #contenedorAcercaDeImg{
+
+@media screen and (width <= 991px){
+    #contenedor-acercade-img{
         display: flex;
         justify-content: center;
         margin-top: 25px;
     }
-    #imgAcercaDe{
+
+    #img-acercade{
         width: 80vw;
         height: auto;
     }
-    #contenedorTextoQuienesSomos{
+
+    #contenedor-texto-quienessomos{
         padding-right: 12px !important;
     }
 }
-@media screen and (max-width: 890px){
-    #mapContacto{
+
+@media screen and (width <= 890px){
+    #map-contacto{
         width: 85%;
     }
 }
-@media screen and (max-width: 825px){
+
+@media screen and (width <= 825px){
     .reset-pl{
         padding-left: 50%;
         padding-right: 50%;
     }
 }
-@media screen and (max-width: 650px){
-    #mapContacto{
+
+@media screen and (width <= 650px){
+    #map-contacto{
         width: 95%;
     }
 }
-@media screen and (max-width: 520px){
-    #contenedorTextoQuienesSomos p{
+
+@media screen and (width <= 520px){
+    #contenedor-texto-quienessomos p{
         font-size: 15px;
     }
-    #titleMap{
+
+    #title-map{
         font-size: 28px;
     }
+
     .row-flex{
         margin-right: 1rem !important;
         margin-left: 1rem !important;
     }
-    #mapContacto{
+
+    #map-contacto{
         width: 85vw;
     }
 }
-@media screen and (max-width: 420px){
-    #titleMap{
+
+@media screen and (width <=  420px){
+    #title-map{
         font-size: 25px;
     }
 }
-@media screen and (max-width: 368px){
-    #titleMap{
+
+@media screen and (width <=  368px){
+    #title-map{
         margin-top: 1rem !important;
     }
 }

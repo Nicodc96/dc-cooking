@@ -75,32 +75,32 @@
         </div>
     </header>
     <main>
-        <div id="contenedorContacto">
+        <div id="contenedor-contacto">
             <div class="row mx-5 my-5">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div id="contenedorContactoImg">
-                        <img src="../assets/contact-us.jpg" alt="contactanos" id="imgContactanos">
+                    <div id="contenedor-contacto-img">
+                        <img src="../assets/contact-us.jpg" alt="contactanos" id="img-contactanos">
                     </div>
                 </div>
-                <section class="col-lg-6 col-md-12 col-sm-12 bg-white rounded px-4 py-4" id="contenedorFormContacto">
-                    <h2 class="text-pacifico text-center red-custom mt-5" id="titleForm">¿Tienes alguna duda o sugerencia?</h2>
-                    <form id="formContacto" method="POST" action="https://formspree.io/f/mnnqjvgl">
+                <section class="col-lg-6 col-md-12 col-sm-12 rounded px-4 py-4" id="contenedor-form-contacto">
+                    <h2 class="text-pacifico text-center red-custom mt-5" id="title-form">¿Tienes alguna duda o sugerencia?</h2>
+                    <form id="form-contacto" method="POST" action="https://formspree.io/f/mnnqjvgl">
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
-                                <label for="inputFormName" class="floatlabel text-label-form">Ingrese su nombre</label>
-                                <input type="text" name="nombre" id="inputFormName" class="form-control" required>
+                                <label for="input-form-name" class="floatlabel fw-semibold">Nombre</label>
+                                <input type="text" name="nombre" id="input-form-name" class="form-control" placeholder="Escriba su nombre aquí..." required>
                             </div>
                             <div class="col-lg-6 col-sm-12">
-                                <label for="inputFormEmail" class="floatlabel text-label-form">Ingrese su email</label>
-                                <input type="email" name="email" id="inputFormEmail" class="form-control" required>
+                                <label for="input-form-email" class="floatlabel fw-semibold">Email</label>
+                                <input type="email" name="email" id="input-form-email" class="form-control" placeholder="Escriba su email aquí..." required>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-12">
-                                <textarea name="textArea" id="inputTextArea" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
+                                <textarea name="textArea" id="input-text-area" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
                             </div>
                         </div>
-                        <div id="contenedorFormBoton">
+                        <div id="contenedor-form-boton">
                             <button type="submit" class="btn btn-success">Enviar</button>
                         </div>
                     </form>
