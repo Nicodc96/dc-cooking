@@ -11,32 +11,23 @@
 }
 
 :root {
-    --background: rgb(44, 44, 44);
-    --linkedin: rgb(10, 102, 194);
-    --github: rgb(235, 235, 235);
-    --twitter: rgb(29, 155, 240);
+    --background: rgb(44 44 44);
+    --linkedin: rgb(10 102 194);
+    --github: rgb(235 235 235);
+    --twitter: rgb(29 155 240);
 }
 
 .bg-orange{
-    background-color: rgb(255, 160, 44);
+    background-color: rgb(255 160 44);
 }
 
 .gap-10{
     gap: 10vw;
 }
 
-.text-disabled{
-    font-weight: 100;
-    color: rgb(77, 77, 77)!important;
-}
-
-.text-disabled:hover{
-    background-color: transparent!important;
-}
-
 .text-active{
     font-weight: 500;
-    color: rgb(235, 235, 235);
+    color: rgb(235 235 235);
 }
 
 .text-molendra{
@@ -52,7 +43,7 @@
 }
 
 .red-custom{
-    color: rgb(218, 43, 31);
+    color: rgb(218 43 31);
 }
 
 .content{
@@ -75,7 +66,7 @@
 }
 
 .width-95{
-    width: 95%!important;
+    width: 95%;
 }
 
 .img-steps-recipe:hover{
@@ -90,9 +81,36 @@
     width:100%;
     height:100%;
     position:absolute;
-    background-color:rgb(24, 24, 24);
+    background-color:rgb(24 24 24);
     opacity: 0.5;
     border-radius:30px;
+}
+
+.d-none-custom{
+    display: none;
+}
+
+.mt-5-cm {
+    margin-top: 3rem;
+}
+
+.px-4-cm {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.py-4-cm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.pe-5-cm {
+    padding-right: 3rem;
+}
+
+.mx-5-cm {
+    margin-right: 3rem;
+    margin-left: 3rem;
 }
 
 /* ----- Header ----- */
@@ -117,7 +135,7 @@
 #container-navlogo > a{
     display: flex;
     gap: 0.5vw;
-    color: rgb(255, 255, 255);
+    color: rgb(255 255 255);
     font-weight: 500;
 }
 
@@ -133,7 +151,7 @@
 
 #contenedor-textmenu .nav-link{
     font-size: 19px;
-    color: rgb(255, 255, 255);
+    color: rgb(255 255 255);
     border-radius: 8px;
 }
 
@@ -175,7 +193,7 @@
 
 #contenedor-svglogo > svg:hover{
     cursor: pointer;
-    background-color: rgb(221, 139, 38);
+    background-color: rgb(221 139 38);
     stroke: black;
 }
 
@@ -185,7 +203,7 @@
     background-image: url("../assets/food-bg1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgb(231, 143, 36);
+    color: rgb(231 143 36);
     font-weight: 600;
     font-size: 18px;
 }
@@ -204,8 +222,8 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    color: rgb(231, 143, 36);
-    border-bottom: 3px solid rgb(255, 174, 74);
+    color: rgb(231 143 36);
+    border-bottom: 3px solid rgb(255 174 74);
 
     --thickness: 3px;
 
@@ -356,7 +374,7 @@ body{
 #main-video iframe{
     width:670px;
     height:375px;
-    border: 4px solid rgb(37, 37, 37);
+    border: 4px solid rgb(37 37 37);
     border-radius: 8px;
 }
 
@@ -370,7 +388,7 @@ body{
 #container-logofooter > a{
     display: flex;
     gap: 0.5vw;
-    color: rgb(255, 255, 255);
+    color: rgb(255 255 255);
     font-weight: 500;
 }
 
@@ -392,7 +410,7 @@ body{
 
 #footer-nombre > p{
     margin-bottom: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(255 255 255);
 }
 
 #contenedor-texto-quienessomos p{
@@ -401,7 +419,7 @@ body{
 
 #contenedor-textmenu .nav-link:hover,
 #container-navlogo p:hover{
-    color: rgb(39, 39, 39);
+    color: rgb(39 39 39);
 }
 
 #footer-nombre .text-balleny{
@@ -410,7 +428,7 @@ body{
 
 #container-logofooter p:hover,
 #footer-nombre .text-balleny:hover{
-    color: rgb(39, 39, 39);
+    color: rgb(39 39 39);
     cursor: pointer;
 }
 
@@ -494,7 +512,7 @@ body{
     width: 17vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid rgb(207, 207, 207);
+    border: 1px solid rgb(207 207 207);
 }
 
 #buscador-container {
@@ -519,9 +537,9 @@ body{
     padding: 2vw 40px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(207, 207, 207);
+    border-color: rgb(207 207 207);
     border-radius: 5px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(245 245 245);
 }
 
 #contenedor-paginacion{

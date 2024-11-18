@@ -91,8 +91,8 @@
 }
 
 @media screen and (width <= 768px) {
-    .d-none{
-        display: block!important;
+    .d-none-custom{
+        display: block;
     }
 
     .comida-veg,
@@ -589,7 +589,7 @@
     }
 
     #title-form{
-        margin-top: auto !important;
+        margin-top: 0;
     }
 }
 
@@ -604,7 +604,7 @@
     }
 
     #contenedor-form-contacto{
-        background-color: transparent!important;
+        background-color: transparent;
     }
 
     #form-contacto{
@@ -663,9 +663,9 @@
 
 @media screen and (width <= 440px) {
     #contenedor-form-contacto{
-        padding-bottom: initial !important;
-        padding-left: initial !important;
-        padding-right: initial !important;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #img-contactanos{
@@ -698,7 +698,7 @@
 /* -------- acerca de -------- */
 @media screen and (width <= 1440px){
     #title-quienessomos{
-        margin-top: 10px!important;
+        margin-top: 10px;
     }
 
     #img-acercade{
@@ -759,7 +759,7 @@
     }
 
     #contenedor-texto-quienessomos{
-        padding-right: 12px !important;
+        padding-right: 12px;
     }
 }
 
@@ -792,8 +792,8 @@
     }
 
     .row-flex{
-        margin-right: 1rem !important;
-        margin-left: 1rem !important;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 
     #map-contacto{
@@ -801,14 +801,14 @@
     }
 }
 
-@media screen and (width <=  420px){
+@media screen and (width <= 420px){
     #title-map{
         font-size: 25px;
     }
 }
 
-@media screen and (width <=  368px){
+@media screen and (width <= 368px){
     #title-map{
-        margin-top: 1rem !important;
+        margin-top: 1rem;
     }
 }
