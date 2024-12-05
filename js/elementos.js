@@ -14,7 +14,6 @@ const crearModal = (numReceta, elementsModalBody, tituloReceta) => {
     let id = `modal-receta-${numReceta}`;
     const mainModal = createElementCustom("div", ["modal", "fade"], "", {
         "data-bs-keyboard": "false",
-        "data-bs-backdrop": "static",
         "id": id,
         "aria-labelledby": `${id}Label`,
         "aria-hidden": "true"

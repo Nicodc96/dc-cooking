@@ -44,6 +44,9 @@ contenedorCardsRecetas.appendChild(crearModal(2, contenedorModales[1](), "Alitas
 contenedorCardsRecetas.appendChild(crearModal(3, contenedorModales[2](), "Revuelto de gramajo"));
 contenedorCardsRecetas.appendChild(crearModal(4, contenedorModales[3](), "Fideos con crema, jamón y champiñones"));
 contenedorCardsRecetas.appendChild(crearModal(5, contenedorModales[4](), "Tarta de banana split"));
+contenedorCardsRecetas.appendChild(crearModal(6, contenedorModales[5](), "Pastafrola de batata"));
+contenedorCardsRecetas.appendChild(crearModal(7, contenedorModales[6](), "Guiso de lentejas"));
+contenedorCardsRecetas.appendChild(crearModal(8, contenedorModales[7](), "Filet de merluza"));
 
 /* ---------------------------------- */
 
