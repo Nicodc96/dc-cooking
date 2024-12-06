@@ -14,6 +14,7 @@ const offcanvas_btnInicioR = document.querySelector("#offcBtnInicioR");
 const offcanvas_btnRecetasR = document.querySelector("#offcBtnRecetasR");
 const offcanvas_btnContactoR = document.querySelector("#offcBtnContactoR");
 const offcanvas_btnAboutUsR = document.querySelector("#offcBtnAcercaDeR");
+const offcanvas_btnServiciosR = document.querySelector("#offcBtnServiciosR");
 
 offcanvas_btnInicioR.addEventListener("click", () => {
     window.location.href = "../index.html";
@@ -26,7 +27,10 @@ offcanvas_btnContactoR.addEventListener("click", () => {
 });
 offcanvas_btnAboutUsR.addEventListener("click", () => {
     window.location.href = "./aboutus.html";
-})
+});
+offcanvas_btnServiciosR.addEventListener("click", () => {
+    window.location.href = "./servicios.html";
+});
 /* ---------------------------------- */
 
 /* Sección lógica para cards */

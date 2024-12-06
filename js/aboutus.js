@@ -14,6 +14,7 @@ const offcanvas_btnInicioA = document.querySelector("#offcBtnInicioA");
 const offcanvas_btnRecetasA = document.querySelector("#offcBtnRecetasA");
 const offcanvas_btnContactoA = document.querySelector("#offcBtnContactoA");
 const offcanvas_btnAboutUsA = document.querySelector("#offcBtnAcercaDeA");
+const offcanvas_btnServiciosA = document.querySelector("#offcBtnServiciosA");
 
 offcanvas_btnInicioA.addEventListener("click", () => {
     window.location.href = "../index.html";
@@ -26,5 +27,8 @@ offcanvas_btnContactoA.addEventListener("click", () => {
 });
 offcanvas_btnAboutUsA.addEventListener("click", () => {
     window.location.href = "./aboutus.html";
+});
+offcanvas_btnServiciosA.addEventListener("click", () => {
+    window.location.href = "./servicios.html";
 })
 /* ---------------------------------- */

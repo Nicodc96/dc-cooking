@@ -14,6 +14,7 @@ const offcanvas_btnInicioC = document.querySelector("#offcBtnInicioC");
 const offcanvas_btnRecetasC = document.querySelector("#offcBtnRecetasC");
 const offcanvas_btnContactoC = document.querySelector("#offcBtnContactoC");
 const offcanvas_btnAboutUsC = document.querySelector("#offcBtnAcercaDeC");
+const offcanvas_btnServiciosC = document.querySelector("#offcBtnServiciosC");
 
 offcanvas_btnInicioC.addEventListener("click", () => {
     window.location.href = "../index.html";
@@ -26,7 +27,10 @@ offcanvas_btnContactoC.addEventListener("click", () => {
 });
 offcanvas_btnAboutUsC.addEventListener("click", () => {
     window.location.href = "./aboutus.html";
-})
+});
+offcanvas_btnServiciosC.addEventListener("click", () => {
+    window.location.href = "./servicios.html";
+});
 /* ---------------------------------- */
 
 /* Manejo del formulario */
