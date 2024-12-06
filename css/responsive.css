@@ -812,3 +812,48 @@
         margin-top: 1rem;
     }
 }
+
+/* -------- servicios -------- */
+
+@media screen and (width <= 767px){
+    #contenedor-titulo-servicios{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #contenedor-titulo-servicios > h2{
+        margin-left: 0;
+    }
+    .icon-cart{
+        margin-right: 0;
+    }
+}
+
+@media screen and (width <= 465px){
+    .service-cards{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service-cards .card{
+        width: 70vw;
+    }
+    .service-cards .card-img-top{
+        width: 69.5vw;
+    }    
+}
+
+@media screen and (width <= 375px){
+    .service-cards .card{
+        width: 80vw;
+    }
+    .service-cards .card-img-top{
+        width: 79.5vw;
+    }    
+}
+
+@media screen and (width <= 320px){
+    #contenedor-titulo-servicios > h2{
+        font-size: 22px;
+    }
+}

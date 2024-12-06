@@ -15,6 +15,7 @@
     --linkedin: rgb(10 102 194);
     --github: rgb(235 235 235);
     --twitter: rgb(29 155 240);
+    --cart: rgb(128, 197, 88);
 }
 
 /* ----- Header ----- */
@@ -159,6 +160,15 @@
     animation: slide 0.5s ease;
 }
 
+#contenedor-titulo-servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contenedor-titulo-servicios > h2{
+    margin-left: 5vw;
+}
+
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -219,7 +229,8 @@ body{
     gap: 20px;
 }
 
-#main-cards{
+#main-cards,
+.service-cards{
     margin: 25px initial;
     display: flex;
     justify-content: center;
@@ -280,6 +291,100 @@ body{
     height:375px;
     border: 4px solid rgb(37 37 37);
     border-radius: 8px;
+}
+
+.icon-cart{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    outline: 2px solid rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+    margin-right: 5em;
+}
+
+.icon-cart:hover{
+    transform: scale(1.07);
+    background-color: var(--cart);
+    outline-offset: 2px;
+    transition: all 0.3s;
+    filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(216deg) brightness(103%) contrast(100%);
+}
+
+.service-cards{
+    gap: 50px;
+}
+
+.service-cards .card-img-top{
+    width: 275px;
+    height: 250px;
+}
+
+.service-cards .card-title{
+    width: 10em;
+    text-wrap: wrap;
+    font-size: 17px;
+}
+
+.icon-card-services{
+    outline: 1px solid rgb(27, 27, 27);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+
+.icon-card-services:hover{
+    transform: scale(1.07);
+    outline-offset: 2px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.rotate-center{
+    animation:rotate-center 0.4s
+}
+
+.rotate-center-backwards{
+    animation: rotate-center-backwards 0.4s;
+}
+
+.rotate-scale-up{
+    animation:rotate-scale-up 0.3s linear both
+} 
+
+@keyframes rotate-scale-up{
+    0% {
+        transform:scale(1) rotateZ(0)
+    }
+    50% {
+        transform:scale(1.5) rotateZ(180deg)
+    }
+    100% {
+        transform:scale(1) rotateZ(360deg)
+    }
+}
+
+@keyframes rotate-center{
+    0% {
+        transform:rotate(0)
+    }
+    100% {
+        transform:rotate(360deg)
+    }
+}
+
+@keyframes rotate-center-backwards{
+    0% {
+        transform:rotate(360deg)
+    }
+    100% {
+        transform:rotate(0)
+    }
 }
 
 /* ----- Footer ----- */
