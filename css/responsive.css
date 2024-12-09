@@ -815,6 +815,30 @@
 
 /* -------- servicios -------- */
 
+@media screen and (width <= 1500px){
+    .custom-pos{
+        left: 70%;
+    }
+}
+
+@media screen and (width <= 1220px){
+    .custom-pos{
+        left: 65%;
+    }
+}
+
+@media screen and (width <= 1005px){
+    .custom-pos{
+        left: 60%;
+    }
+}
+
+@media screen and (width <= 885px){
+    .custom-pos{
+        left: 53%;
+    }
+}
+
 @media screen and (width <= 767px){
     #contenedor-titulo-servicios{
         flex-direction: column;
@@ -826,6 +850,33 @@
     }
     .icon-cart{
         margin-right: 0;
+    }
+    .custom-pos{
+        left: 49%;
+    }
+}
+
+@media screen and (width <= 690px){
+    .custom-pos{
+        left: 42%;
+    }
+}
+
+@media screen and (width <= 610px){
+    .custom-pos{
+        left: 35%;
+    }
+}
+
+@media screen and (width <= 543px){
+    .custom-pos{
+        left: 30%;
+    }
+}
+
+@media screen and (width <= 500px){
+    .custom-pos{
+        left: 20%;
     }
 }
 
@@ -843,17 +894,35 @@
     }    
 }
 
+@media screen and (width <= 438px){
+    .custom-pos{
+        left: 10%;
+    }
+}
+
+@media screen and (width <= 391px){
+    .custom-pos{
+        left: 5%;
+    }
+}
+
 @media screen and (width <= 375px){
     .service-cards .card{
         width: 80vw;
     }
     .service-cards .card-img-top{
         width: 79.5vw;
-    }    
+    }
+    .custom-pos{
+        left: 4%;
+    }
 }
 
 @media screen and (width <= 320px){
     #contenedor-titulo-servicios > h2{
         font-size: 22px;
+    }
+    .custom-pos{
+        left: 0%;
     }
 }

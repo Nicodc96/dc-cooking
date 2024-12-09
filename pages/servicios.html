@@ -80,8 +80,109 @@
         <section class="p-5" id="contenedor-titulo-servicios">
             <h2 class="text-pacifico red-custom">Conoce nuestros servicios</h2>
             <div>
-                <div class="icon-cart">
+                <div class="icon-cart" data-bs-toggle="modal" data-bs-target="#modal-carrito">
                     <img src="../assets/svg/cart.svg" id="img-icon-cart" alt="carrito de compras">
+                </div>
+                <div class="modal fade" id="modal-carrito" tabindex="-1" aria-labelledby="modal-carrito-title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-molendra" id="modal-carrito-title">Carrito de compras</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="modal-carrito-body">
+                                <div class="elemento-carrito">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fw-semibold">Pack de (x50) recetas premium</p>
+                                        <div class="d-flex gap-3">
+                                            <ul class="pagination pagination-sm" id="item-listid-1">
+                                                <li class="page-item"><p class="page-link remove-item">-</p></li>
+                                                <li class="page-item"><p class="page-link disabled">1</p></li>
+                                                <li class="page-item"><p class="page-link add-item">+</p></li>
+                                            </ul>
+                                            <p>Precio: <span class="text-success">$20000</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/pack-recetas.webp" class="img-item-carrito" alt="Pack de (x50) recetas premium">
+                                </div>
+                                <div class="elemento-carrito">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fw-semibold">Pack de (x50) recetas premium</p>
+                                        <div class="d-flex gap-3">
+                                            <ul class="pagination pagination-sm" id="item-listid-1">
+                                                <li class="page-item"><p class="page-link remove-item">-</p></li>
+                                                <li class="page-item"><p class="page-link disabled">1</p></li>
+                                                <li class="page-item"><p class="page-link add-item">+</p></li>
+                                            </ul>
+                                            <p>Precio: <span class="text-success">$20000</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/pack-recetas.webp" class="img-item-carrito" alt="Pack de (x50) recetas premium">
+                                </div>
+                                <div class="elemento-carrito">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fw-semibold">Pack de (x50) recetas premium</p>
+                                        <div class="d-flex gap-3">
+                                            <ul class="pagination pagination-sm" id="item-listid-1">
+                                                <li class="page-item"><p class="page-link remove-item">-</p></li>
+                                                <li class="page-item"><p class="page-link disabled">1</p></li>
+                                                <li class="page-item"><p class="page-link add-item">+</p></li>
+                                            </ul>
+                                            <p>Precio: <span class="text-success">$20000</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/pack-recetas.webp" class="img-item-carrito" alt="Pack de (x50) recetas premium">
+                                </div>
+                                <div class="elemento-carrito">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fw-semibold">Pack de (x50) recetas premium</p>
+                                        <div class="d-flex gap-3">
+                                            <ul class="pagination pagination-sm" id="item-listid-1">
+                                                <li class="page-item"><p class="page-link remove-item">-</p></li>
+                                                <li class="page-item"><p class="page-link disabled">1</p></li>
+                                                <li class="page-item"><p class="page-link add-item">+</p></li>
+                                            </ul>
+                                            <p>Precio: <span class="text-success">$20000</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/pack-recetas.webp" class="img-item-carrito" alt="Pack de (x50) recetas premium">
+                                </div>
+                                <div class="elemento-carrito">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fw-semibold">Pack de (x50) recetas premium</p>
+                                        <div class="d-flex gap-3">
+                                            <ul class="pagination pagination-sm" id="item-listid-1">
+                                                <li class="page-item"><p class="page-link remove-item">-</p></li>
+                                                <li class="page-item"><p class="page-link disabled">1</p></li>
+                                                <li class="page-item"><p class="page-link add-item">+</p></li>
+                                            </ul>
+                                            <p>Precio: <span class="text-success">$20000</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/pack-recetas.webp" class="img-item-carrito" alt="Pack de (x50) recetas premium">
+                                </div>
+                                <div class="elemento-carrito">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fw-semibold">Pack de (x50) recetas premium</p>
+                                        <div class="d-flex gap-3">
+                                            <ul class="pagination pagination-sm" id="item-listid-1">
+                                                <li class="page-item"><p class="page-link remove-item">-</p></li>
+                                                <li class="page-item"><p class="page-link disabled">1</p></li>
+                                                <li class="page-item"><p class="page-link add-item">+</p></li>
+                                            </ul>
+                                            <p>Precio: <span class="text-success">$20000</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="../assets/pack-recetas.webp" class="img-item-carrito" alt="Pack de (x50) recetas premium">
+                                </div>
+                                <p class="text-center fw-semibold fs-5 mt-3">Total: $549548</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Ver más servicios</button>
+                                <button type="button" class="btn btn-primary" id="btn-modal-carrito-comprar">Iniciar compra</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,6 +191,7 @@
                 <img src="../assets/pack-recetas.webp" class="card-img-top" alt="pack de recetas">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title text-center">Pack de (x50) recetas premium</h5>
+                    <p class="text-success">$20.000</p>
                     <img src="../assets/svg/cart-plus.svg" class="icon-card-services" alt="agregar al carrito">
                 </div>
             </div>
@@ -97,6 +199,7 @@
                 <img src="../assets/chef.webp" class="card-img-top" alt="asesoramiento de chef">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title text-center text-wrap">Asesoramiento de un chef profesional</h5>
+                    <p class="text-success">$15.000</p>
                     <img src="../assets/svg/cart-plus.svg" class="icon-card-services" alt="agregar al carrito">
                 </div>
             </div>
@@ -104,6 +207,7 @@
                 <img src="../assets/manual.webp" class="card-img-top" alt="manual de cocina">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title text-center text-wrap">¡Adquiere nuestro manual!</h5>
+                    <p class="text-success">$8.000</p>
                     <img src="../assets/svg/cart-plus.svg" class="icon-card-services" alt="agregar al carrito">
                 </div>
             </div>
@@ -111,6 +215,7 @@
                 <img src="../assets/tools.webp" class="card-img-top" alt="utensilios de cocina">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title text-center text-wrap">¡Adquiere los mejores utensilios!</h5>
+                    <p class="text-success">$34.999</p>
                     <img src="../assets/svg/cart-plus.svg" class="icon-card-services" alt="agregar al carrito">
                 </div>
             </div>
@@ -118,6 +223,7 @@
                 <img src="../assets/juego-de-ollas-sartenes.webp" class="card-img-top" alt="ollas y sartenes">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title text-center text-wrap">Pack de ollas y sartenes</h5>
+                    <p class="text-success">$59.999</p>
                     <img src="../assets/svg/cart-plus.svg" class="icon-card-services" alt="agregar al carrito">
                 </div>
             </div>
@@ -125,7 +231,19 @@
                 <img src="../assets/premium.webp" class="card-img-top" alt="miembro vip">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title text-center text-wrap">¡Accede a nuestro catálogo VIP!</h5>
+                    <p class="text-success">$4.999</p>
                     <img src="../assets/svg/cart-plus.svg" class="icon-card-services" alt="agregar al carrito">
+                </div>
+            </div>
+        </div>
+        <p class="text-center fs-sm">(*)todos los precios son en pesos argentinos.</p>
+        <div class="toast-container position-fixed custom-pos">
+            <div class="toast align-items-center text-bg-success border-0" data-bs-delay="2000" role="alert" id="toast-agregado" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                    <p>¡Se agregó el item al carrito!</p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
             </div>
         </div>
