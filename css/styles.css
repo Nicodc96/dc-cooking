@@ -298,16 +298,28 @@ body{
     border-radius: 8px;
 }
 
-.icon-cart{
+.icon-cart,
+.icon-limpiar-carrito{
     width: 42px;
     height: 42px;
     border-radius: 50%;
     outline: 2px solid rgb(27, 27, 27);
     cursor: pointer;
-    transition: all 0.3s;
+    transition: hover 0.3s;
     display: grid;
     place-items: center;
     margin-right: 5em;
+}
+
+.icon-limpiar-carrito{
+    width: 36px;
+    height: 36px;
+    margin-right: 0;
+}
+
+.icon-limpiar-carrito:hover{
+    transform: scale(1.07);
+    outline-offset: 1px;
 }
 
 .icon-cart:hover{
@@ -420,6 +432,33 @@ body{
 .custom-pos{
     top: 90%;
     left: 78%;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(36, 36, 36);
+    font-size: 15px;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
 
 @keyframes rotate-scale-up{
