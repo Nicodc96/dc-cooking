@@ -122,7 +122,9 @@ window.addEventListener("click", (e) => {
                 cantidad: 1
             });
         }
-        
+        if (btnModalCarritoComprar.classList.contains("disabled")){
+            btnModalCarritoComprar.classList.remove("disabled");
+        }
         localStorage.setItem("pedidos", JSON.stringify(listaCarritoDeCompras));
         cleanModalContent();
         checkElementslocalStorage();
@@ -184,7 +186,7 @@ const notElementsOnCart = () => {
 const cleanModalContent = () => {
     while (modalCarritoBody.hasChildNodes() && modalCarritoBody.firstElementChild){
         modalCarritoBody.removeChild(modalCarritoBody.firstElementChild);
-    }
+    }    
 }
 
 // Elementos 'precio total' y botón limpiar carrito
@@ -269,7 +271,7 @@ const elementoCarritoElement = (service) => {
     return divElementoCarrito;
 }
 
-// Manejo del evento 'limpiar carrito'
+// Manejo del evento click del botón 'limpiar carrito'
 const btnLimpiarCarritoHandle = () => {
     Swal.fire({
         title: "Confirmación",
@@ -283,13 +285,24 @@ const btnLimpiarCarritoHandle = () => {
     }).then(response => {
         if (response.isConfirmed){
             cleanModalContent();
-            modalCarritoBody.appendChild(notElementsOnCart());
-            btnModalCarritoComprar.classList.add("disabled");
-            listaCarritoDeCompras.length = 0;
-            localStorage.setItem("pedidos", JSON.stringify(listaCarritoDeCompras));
+            modalCarritoBody.innerHTML = `<div id="contenedor-spinner" class="d-flex justify-content-center"><img src="../assets/svg/tube-spinner.svg" class="spinner" alt="spinner"></div>`;
+            setTimeout(() => {
+                cleanModalContent();
+                modalCarritoBody.appendChild(notElementsOnCart());
+                btnModalCarritoComprar.classList.add("disabled");
+                listaCarritoDeCompras.length = 0;
+                localStorage.setItem("pedidos", JSON.stringify(listaCarritoDeCompras));
+            }, 1000);        
         }
     });
 }
+
+// Manejo del evento click del botón 'Iniciar compra'
+btnModalCarritoComprar.addEventListener("click", (e) => {
+    if (!e.target.classList.contains(".disabled")){
+        window.location.href = "./shopping.html";
+    }
+})
 
 // Chequea el array del localStorage
 const checkElementslocalStorage =  () => {

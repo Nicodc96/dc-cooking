@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <!-- HTML Meta Tags -->
-    <title>Contáctanos - DC Cooking</title>
+    <title>Datos de compra - DC Cooking</title>
     <meta name="description" content="DC Cooking. Recetas de comidas de todos los países. Proyecto educativo.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -42,73 +42,78 @@
                         <p class="text-molendra">DC Cooking</p>
                     </a>
                 </div>
-                <div id="contenedor-textmenu">
-                    <div class="navbar-nav">
-                        <a class="nav-link text-molendra text-active" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link text-molendra" href="./recetas.html">Recetas</a>
-                        <a class="nav-link text-molendra" href="./servicios.html">Servicios</a>
-                        <a class="nav-link text-molendra" href="./aboutus.html">Acerca de</a>
-                        <a class="nav-link text-molendra" href="#">Contacto</a>
-                    </div>
-                </div>
-                <div id="contenedor-svglogo">
-                    <img src="../assets/svg/black-lines.svg" alt="lineas-negras" data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas">
-                </div>
             </div>
         </nav>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="offcanvasBody">
-            <div class="offcanvas-header bg-orange">
-                <h5 class="text-molendra text-white">Navegacion</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
-            </div>
-            <div class="offcanvas-body" id="offcanvasBody">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Búsqueda..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-                <div id="offcanvas-buttons">
-                    <button type="button" id="offcBtnInicioC" class="btn-98">Inicio</button>
-                    <button type="button" id="offcBtnRecetasC" class="btn-98">Recetas</button>
-                    <button type="button" id="offcBtnServiciosC" class="btn-98">Servicios</button>
-                    <button type="button" id="offcBtnAcercaDeC" class="btn-98">Acerca de</button>
-                    <button type="button" id="offcBtnContactoC" class="btn-98">Contacto</button>
-                </div>
-            </div>
-        </div>
     </header>
     <main>
-        <div id="contenedor-contacto">
-            <div class="row mx-5-cm my-5">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div id="contenedor-contacto-img">
-                        <img src="../assets/contact-us.webp" alt="contactanos" id="img-contactanos">
-                    </div>
+        <section class="p-5-cm">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./servicios.html">Servicios</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Datos de compra</li>
+                </ol>
+            </nav>
+            <div id="contenedor-resumen" class="row bg-body-tertiary rounded">
+                <div class="col-xl-5 col-lg-6">
+                    <h2 class="text-molendra mb-4">Resumen de su pedido</h2>
+                    <div id="resumen-carrito"></div>
                 </div>
-                <section class="col-lg-6 col-md-12 col-sm-12 rounded px-4-cm py-4-cm" id="contenedor-form-contacto">
-                    <h2 class="text-pacifico text-center red-custom mt-5-cm" id="title-form">¿Tienes alguna duda o sugerencia?</h2>
-                    <form id="form-contacto" method="POST" action="https://formspree.io/f/mnnqjvgl">
+                <div class="col-xl-7 col-lg-6">
+                    <h3 class="text-molendra text-center">Datos de contacto</h3>
+                    <form method="post" action="https://formspree.io/f/mrbgwzpp" class="form-shop">
+                        <textarea name="resumen" id="info-carrito" style="display: none;"></textarea>
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12">
-                                <label for="input-form-name" class="floatlabel fw-semibold">Nombre</label>
-                                <input type="text" name="nombre" id="input-form-name" class="form-control" placeholder="Escriba su nombre aquí..." required>
-                            </div>
-                            <div class="col-lg-6 col-sm-12">
-                                <label for="input-form-email" class="floatlabel fw-semibold">Email</label>
-                                <input type="email" name="email" id="input-form-email" class="form-control" placeholder="Escriba su email aquí..." required>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12">
-                                <textarea name="textArea" id="input-text-area" cols="30" rows="8" class="form-control" placeholder="Deje su mensaje aquí..."></textarea>
+                            <div class="col">
+                                <div class="input-group has-validation">
+                                    <div class="form-floating mb-2">
+                                        <input type="email" class="form-control form-control-sm" name="email" id="form-shop-email" placeholder="nombre@ejemplo.com" required>
+                                        <label for="form-shop-email">Ingrese su email aquí</label>
+                                    </div>
+                                    <div class="invalid-feedback mb-3">
+                                        El email debe tener un @ y un dominio correcto.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div id="contenedor-form-boton">
-                            <button type="submit" class="btn btn-success">Enviar</button>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group has-validation">
+                                    <div class="form-floating mb-2">
+                                        <input type="text" class="form-control form-control-sm" name="name" id="form-shop-nombre" placeholder="nombre" required>
+                                        <label for="form-shop-nombre">Nombre</label>
+                                    </div>
+                                    <div class="invalid-feedback mb-3">
+                                        El nombre debe tener entre 3 y 30 caracteres, sin acentos ni caracteres especiales.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group has-validation">
+                                    <div class="form-floating mb-2">
+                                        <input type="text" class="form-control form-control-sm" name="phone" id="form-shop-telefono" placeholder="telefono" required>
+                                        <label for="form-shop-telefono">Teléfono</label>
+                                    </div>
+                                    <div class="invalid-feedback mb-3">
+                                        El teléfono debe ser numérico, no debe tener código de país, ni código de área y sin uso de guíon medio (-).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control form-control-sm" name="cupon" id="form-shop-descuento" placeholder="XXXXXXXXXX">
+                                    <label for="form-shop-descuento">¿Tenés un cupón de descuento?</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row-reverse mt-4 gap-1" id="container-btn-confirmar">
+                            <button type="button" class="btn btn-primary" id="btn-confirmar">Confirmar</button>
                         </div>
                     </form>
-                </section>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div id="contenedor-footer" class="bg-orange">
@@ -155,6 +160,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="../js/contacto.js" type="module"></script>
+    <script src="../js/shopping.js" type="module"></script>
 </body>
 </html>
