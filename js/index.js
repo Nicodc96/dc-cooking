@@ -19,8 +19,8 @@ const hideImagesAfterLoad = () => {
     document.querySelector(".comida-ita").src = "./assets/comida-italiana.webp";
     document.querySelector(".comida-fran").src = "./assets/comida-francesa.webp";
     document.querySelector(".comida-arg").src = "./assets/comidas-argentinas.webp";
-    document.querySelector("#offcanvasBody").style.backgroundImage = "url('./assets/food-bg1.webp')";
-    document.querySelector("#header-image").style.backgroundImage = "url('./assets/bg-header.webp')";
+    document.querySelector("#offcanvasBody").style.backgroundImage = "url('https://i.ibb.co/SnmFWZH/food-bg1.webp')";
+    document.querySelector("#header-image").style.backgroundImage = "url('https://i.ibb.co/rwNdkdv/bg-header.webp')";
 }
 
 const loadYoutubeVideo = () => {
