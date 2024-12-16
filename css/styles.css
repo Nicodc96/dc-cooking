@@ -15,7 +15,122 @@
     --linkedin: rgb(10 102 194);
     --github: rgb(235 235 235);
     --twitter: rgb(29 155 240);
-    --cart: rgb(128, 197, 88);
+    --cart: rgb(128 197 88);
+}
+
+/* Arreglos de estilos generales */
+
+.fs-sm{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.bg-orange{
+    background-color: rgb(255 160 44);
+}
+
+.gap-10{
+    gap: 10vw;
+}
+
+.text-active{
+    font-weight: 500;
+    color: rgb(235 235 235);
+}
+
+.text-molendra{
+    font-family: Molendra, sans-serif;
+}
+
+.text-pacifico{
+    font-family: Pacifico, sans-serif;
+}
+
+.text-balleny{
+    font-family: Balleny, sans-serif;
+}
+
+.red-custom{
+    color: rgb(218 43 31);
+}
+
+.content{
+    padding: 30px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.navbar{
+    z-index: 2;
+}
+
+.width-95{
+    width: 95%;
+}
+
+.img-steps-recipe:hover{
+    cursor: pointer;
+}
+
+.toggle-z-index{
+    z-index: 1050;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:rgb(24 24 24);
+    opacity: 0.5;
+    border-radius:30px;
+}
+
+.p-5-cm{
+    padding: 3rem;
+}
+
+.d-none-custom{
+    display: none;
+}
+
+.mt-5-cm {
+    margin-top: 3rem;
+}
+
+.px-4-cm {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.py-4-cm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.pe-5-cm {
+    padding-right: 3rem;
+}
+
+.mx-5-cm {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.carousel-indicators{
+    z-index: 1;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: url("../assets/svg/arrow-right.svg");
 }
 
 /* ----- Header ----- */
@@ -257,6 +372,11 @@ body{
     transform: scale(1.03);
 }
 
+.service-cards .card-img-top{
+    width: 275px;
+    height: 250px;
+}
+
 #main-cards .card-img-top{
     width: auto;
     height: 200px;
@@ -298,7 +418,7 @@ body{
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    outline: 2px solid rgb(27, 27, 27);
+    outline: 2px solid rgb(27 27 27);
     cursor: pointer;
     transition: hover 0.3s;
     display: grid;
@@ -329,11 +449,6 @@ body{
     gap: 50px;
 }
 
-.service-cards .card-img-top{
-    width: 275px;
-    height: 250px;
-}
-
 .service-cards .card-title{
     width: 10em;
     text-wrap: wrap;
@@ -341,7 +456,7 @@ body{
 }
 
 .icon-card-services{
-    outline: 1px solid rgb(27, 27, 27);
+    outline: 1px solid rgb(27 27 27);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -379,7 +494,7 @@ body{
 }
 
 #modal-carrito .modal-title{
-    background-color: rgba(255 255 255 / 0.5);
+    background-color: rgba(255 255 255 / 50%);
     border-radius: 8px;
     padding-left: 5px;
     padding-right: 5px;
@@ -417,11 +532,11 @@ body{
 }
 
 .add-item:hover{
-    background-color: rgb(13, 110, 253);
+    background-color: rgb(13 110 253);
 }
 
 .remove-item:hover{
-    background-color: rgb(220, 53, 69);
+    background-color: rgb(220 53 69);
 }
 
 .custom-pos{
@@ -433,10 +548,11 @@ body{
     position: relative;
     display: inline-block;
 }
+
 .tooltip-text {
     visibility: hidden;
     width: 120px;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(36 36 36);
     font-size: 15px;
     color: rgb(255 255 255);
     text-align: center;
@@ -476,8 +592,12 @@ body{
     margin-top: 35px;
 }
 
+#info-carrito{
+    display: none;
+}
+
 .is-confirmed{
-    border-color: rgb(25, 135, 84);
+    border-color: rgb(25 135 84);
     padding-right: calc(1.5em + .75rem);
     background-image: url("../assets/svg/circle-check.svg");
     background-repeat: no-repeat;
@@ -489,9 +609,11 @@ body{
     0% {
         transform:scale(1) rotateZ(0)
     }
+
     50% {
         transform:scale(1.5) rotateZ(180deg)
     }
+
     100% {
         transform:scale(1) rotateZ(360deg)
     }
@@ -501,6 +623,7 @@ body{
     0% {
         transform:rotate(0)
     }
+
     100% {
         transform:rotate(360deg)
     }
@@ -510,6 +633,7 @@ body{
     0% {
         transform:rotate(360deg)
     }
+    
     100% {
         transform:rotate(0)
     }
@@ -741,115 +865,4 @@ body{
 #map-contacto{
     width: 50%;
     height: 350px;
-}
-
-/* Arreglos de estilos generales */
-
-.fs-sm{
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.bg-orange{
-    background-color: rgb(255 160 44);
-}
-
-.gap-10{
-    gap: 10vw;
-}
-
-.text-active{
-    font-weight: 500;
-    color: rgb(235 235 235);
-}
-
-.text-molendra{
-    font-family: Molendra, sans-serif;
-}
-
-.text-pacifico{
-    font-family: Pacifico, sans-serif;
-}
-
-.text-balleny{
-    font-family: Balleny, sans-serif;
-}
-
-.red-custom{
-    color: rgb(218 43 31);
-}
-
-.content{
-    padding: 30px;
-}
-
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.sticky + .content {
-    padding-top: 60px;
-}
-
-.navbar{
-    z-index: 2;
-}
-
-.width-95{
-    width: 95%;
-}
-
-.img-steps-recipe:hover{
-    cursor: pointer;
-}
-
-.toggle-z-index{
-    z-index: 1050;
-}
-
-.overlay{
-    width:100%;
-    height:100%;
-    position:absolute;
-    background-color:rgb(24 24 24);
-    opacity: 0.5;
-    border-radius:30px;
-}
-
-.p-5-cm{
-    padding: 3rem;
-}
-
-.d-none-custom{
-    display: none;
-}
-
-.mt-5-cm {
-    margin-top: 3rem;
-}
-
-.px-4-cm {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.py-4-cm {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.pe-5-cm {
-    padding-right: 3rem;
-}
-
-.mx-5-cm {
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-
-.carousel-indicators{
-    z-index: 1;
 }

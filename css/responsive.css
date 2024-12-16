@@ -845,12 +845,15 @@
         align-items: center;
         gap: 20px;
     }
+
     #contenedor-titulo-servicios > h2{
         margin-left: 0;
     }
+
     .icon-cart{
         margin-right: 0;
     }
+
     .custom-pos{
         left: 49%;
     }
@@ -872,6 +875,7 @@
     .custom-pos{
         left: 30%;
     }
+
     #img-sin-elementos{
         width: 400px;
     }
@@ -889,12 +893,15 @@
         margin-left: auto;
         margin-right: auto;
     }
+
     .service-cards .card{
         width: 70vw;
     }
+
     .service-cards .card-img-top{
         width: 69.5vw;
     }
+
     #img-sin-elementos{
         width: 350px;
     }
@@ -916,12 +923,15 @@
     .service-cards .card{
         width: 80vw;
     }
+
     .service-cards .card-img-top{
         width: 79.5vw;
     }
+
     .custom-pos{
         left: 4%;
     }
+
     #img-sin-elementos{
         width: 300px;
     }
@@ -931,9 +941,11 @@
     #contenedor-titulo-servicios > h2{
         font-size: 22px;
     }
+
     .custom-pos{
         left: 0%;
     }
+
     #img-sin-elementos{
         width: 290px;
     }
@@ -945,9 +957,11 @@
     .col-xl-7{
         margin-top: 35px;
     }
+
     .p-5-cm{
         padding: 1.5rem;
     }
+
     label{
         font-size: 14px;
     }
@@ -957,6 +971,7 @@
     .p-5-cm{
         padding: 0.75rem;
     }
+    
     .form-shop{
         padding: 15px;
     }

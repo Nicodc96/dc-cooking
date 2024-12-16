@@ -1,3 +1,4 @@
+import { cleanChildNodes } from './utils/elementos-servicio.js';
 const listaCarritoDeCompras = JSON.parse(localStorage.getItem("pedidos")) || [];
 const contenedorResumen = document.querySelector("#resumen-carrito");
 const inputEmailResumen = document.querySelector("#form-shop-email");
@@ -61,13 +62,9 @@ const handleClickConfirm = (event) => {
     const nameRegexValidator = /^([a-zA-ZÀ-ÿ ]){3,30}$/;
     const phoneRegexValidator = /^([0-9]){8,10}$/;
 
-    const inputEmail = document.querySelector("#form-shop-email");
-    const inputNombre = document.querySelector("#form-shop-nombre");
-    const inputTelefono = document.querySelector("#form-shop-telefono");
-
-    if (!emailRegexValidator.test(inputEmail.value) 
-    || !nameRegexValidator.test(inputNombre.value)
-    || !phoneRegexValidator.test(inputTelefono.value)){
+    if (!emailRegexValidator.test(document.querySelector("#form-shop-email").value) 
+    || !nameRegexValidator.test(document.querySelector("#form-shop-nombre").value)
+    || !phoneRegexValidator.test(document.querySelector("#form-shop-telefono").value)){
         Swal.fire({
             title: "Atención",
             text: "Revise nuevamente los errores del formulario",
@@ -126,8 +123,7 @@ const handleClickConfirm = (event) => {
                         setTimeout(() => {
                             window.location.href = "./servicios.html";
                         }, 1500);
-                    });
-                    
+                    });                    
                 } else{
                     let errorMessage = "¡No se ha enviado el formulario! Verifique que toda la información ingresada sea la correcta.";
                     Swal.fire({
@@ -200,6 +196,7 @@ const totalResumen = (lista) => {
     const divContainer = document.createElement("div");
     divContainer.classList.add(...["d-flex", "flex-row", "align-items-center", "justify-content-between"]);
     divContainer.id = "container-totalprice-resume";
+
     const pElementTotalPrice = document.createElement("p");
     pElementTotalPrice.id = "totalprice-resume";
 
@@ -209,13 +206,6 @@ const totalResumen = (lista) => {
     divContainer.appendChild(pElementTotalPrice);
 
     return divContainer;
-}
-
-// Limpia los nodos hijos de un contenedor
-const cleanChildNodes = (container) => {
-    while (container && container.hasChildNodes()){
-        container.removeChild(container.firstElementChild);
-    }
 }
 
 // Se añade manejo de evento focusout en los inputs del formulario

@@ -1,35 +1,22 @@
 /* Sección para navbar sticky effect */
-window.onscroll = () => toggleSticky();
+import { toggleSticky } from "./utils/navbarSticky.js";
+import { handleOffCanvasClick } from "./utils/offcanvasClick.js";
+import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/src/sweetalert2.js';
+import { notElementsOnCart, cleanChildNodes, cleanCartAndTotalPriceElements, elementCarrito } from "./utils/elementos-servicio.js";
 
 const navbar = document.querySelector(".navbar");
-let stickyNavbar = navbar.offsetTop;
+let sticky = navbar.offsetTop;
 
-const toggleSticky = () => {
-    window.scrollY >= stickyNavbar ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
+window.onscroll = () => toggleSticky(navbar, sticky);
 
-/* - Sección para control de eventos - */
-const offcanvas_btnInicioS = document.querySelector("#offcBtnInicioS");
-const offcanvas_btnRecetasS = document.querySelector("#offcBtnRecetasS");
-const offcanvas_btnContactoS = document.querySelector("#offcBtnContactoS");
-const offcanvas_btnAboutUsS = document.querySelector("#offcBtnAcercaDeS");
-const offcanvas_btnServiciosS = document.querySelector("#offcBtnServiciosS");
+/* Sección para control de eventos click de offcanvas */
 
-offcanvas_btnInicioS.addEventListener("click", () => {
-    window.location.href = "../index.html";
-});
-offcanvas_btnRecetasS.addEventListener("click", () => {
-    window.location.href = "./recetas.html";
-});
-offcanvas_btnContactoS.addEventListener("click", () => {
-    window.location.href = "./contacto.html";
-});
-offcanvas_btnAboutUsS.addEventListener("click", () => {
-    window.location.href = "./aboutus.html";
-});
-offcanvas_btnServiciosS.addEventListener("click", () => {
-    window.location.href = "./servicios.html";
-});
+document.querySelector("#offcBtnInicioS").addEventListener("click", () => handleOffCanvasClick("../index.html"));
+document.querySelector("#offcBtnRecetasS").addEventListener("click", () => handleOffCanvasClick("./recetas.html"));
+document.querySelector("#offcBtnContactoS").addEventListener("click", () => handleOffCanvasClick("./contacto.html"));
+document.querySelector("#offcBtnAcercaDeS").addEventListener("click", () => handleOffCanvasClick("./aboutus.html"));
+document.querySelector("#offcBtnServiciosS").addEventListener("click", () => handleOffCanvasClick("./servicios.html"));
+
 /* --------------  Efectos de botones -------------- */
 
 const imgIconCart = document.querySelector("#img-icon-cart");
@@ -67,28 +54,22 @@ const listaCarritoDeCompras = JSON.parse(localStorage.getItem("pedidos")) || [];
 const modalCarritoBody = document.querySelector("#modal-carrito-body");
 const btnModalCarritoComprar = document.querySelector("#btn-modal-carrito-comprar");
 
-import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/src/sweetalert2.js'; // sweetalert2
-
-
 // Manejo de botones + y - en lista de items
 window.addEventListener("click", (e) => {
     // Botón '-'
     if (e.target.matches(".remove-item")){
         const numeroItems = e.target.parentElement.nextElementSibling.firstElementChild;
         const quitarItems = e.target;
-        if (Number(numeroItems.textContent) <= 1){
-            quitarItems.classList.add("disabled");
-            numeroItems.textContent = Number(numeroItems.textContent) - 1;
-            modifyQuantityElement(e.target.parentElement.parentElement.id.split("id-")[1], Number(numeroItems.textContent));
-        } else{
-            numeroItems.textContent = Number(numeroItems.textContent) - 1;
-            modifyQuantityElement(e.target.parentElement.parentElement.id.split("id-")[1], Number(numeroItems.textContent));
-        }
+
+        if (Number(numeroItems.textContent) <= 1) quitarItems.classList.add("disabled");
+        numeroItems.textContent = Number(numeroItems.textContent) - 1;
+        modifyQuantityElement(e.target.parentElement.parentElement.id.split("id-")[1], Number(numeroItems.textContent));
     }
     // Botón '+'
     if (e.target.matches(".add-item")){
         const numeroItems = e.target.parentElement.previousElementSibling.firstElementChild;
         const quitarItems = e.target.parentElement.previousElementSibling.previousElementSibling.firstElementChild;
+
         quitarItems.classList.remove("disabled");
         numeroItems.textContent = Number(numeroItems.textContent) + 1;
         modifyQuantityElement(e.target.parentElement.parentElement.id.split("id-")[1], Number(numeroItems.textContent));
@@ -105,12 +86,13 @@ window.addEventListener("click", (e) => {
 
         if (listaCarritoDeCompras.length > 0){
             idItem = listaCarritoDeCompras[listaCarritoDeCompras.length -1].id + 1;
-            listaCarritoDeCompras.forEach((servicio) => {
-                if (servicio.nombre == btnAgregarAlCarrito.parentElement.children[0].textContent){
+            for (let i = 0; i < listaCarritoDeCompras.length; i++){
+                if (listaCarritoDeCompras[i].nombre == btnAgregarAlCarrito.parentElement.children[0].textContent){
                     existente = true;
-                    servicio.cantidad += 1;
+                    listaCarritoDeCompras[i].cantidad += 1;
+                    break;
                 }
-            });
+            }
         }
 
         if (!existente){
@@ -122,11 +104,12 @@ window.addEventListener("click", (e) => {
                 cantidad: 1
             });
         }
-        if (btnModalCarritoComprar.classList.contains("disabled")){
-            btnModalCarritoComprar.classList.remove("disabled");
-        }
+
+        if (btnModalCarritoComprar.classList.contains("disabled")) btnModalCarritoComprar.classList.remove("disabled");
+
+        // Actualizar localStorage, actualizar modal, actualizar precio total
         localStorage.setItem("pedidos", JSON.stringify(listaCarritoDeCompras));
-        cleanModalContent();
+        cleanChildNodes(modalCarritoBody);
         checkElementslocalStorage();
         updateCantidadTotal();
     }
@@ -135,11 +118,12 @@ window.addEventListener("click", (e) => {
 // Buscar y modificar la cantidad de un elemento del array
 const modifyQuantityElement = (id, nuevaCantidad) => {
     if (listaCarritoDeCompras.length > 0){
-        listaCarritoDeCompras.forEach((servicio) => {
-            if (servicio.id == id){
-                servicio.cantidad = nuevaCantidad;
+        for (let i = 0; i < listaCarritoDeCompras.length; i++){
+            if (listaCarritoDeCompras[i].id == id){
+                listaCarritoDeCompras[i].cantidad = nuevaCantidad;
+                break;
             }
-        });
+        }
     }
     updateCantidadTotal();
     localStorage.setItem("pedidos", JSON.stringify(listaCarritoDeCompras));
@@ -157,120 +141,6 @@ const updateCantidadTotal = () => {
     pPrecioTotal.textContent = `Total: $${nuevoTotal}`;
 }
 
-// Si el carrito está vacío, renderizará una imagen ilustrativa y un texto
-const notElementsOnCart = () => {
-    const divContenedorCentral = document.createElement("div");
-    divContenedorCentral.classList.add(...["d-flex", "flex-column", "align-items-center", "gap-2"]);
-    
-    const imgNotElement = document.createElement("img");
-    imgNotElement.id = "img-sin-elementos";
-    imgNotElement.src = "../assets/carrito-vacio.webp";
-    imgNotElement.alt = "carrito vacio";
-    imgNotElement.width = 500;
-    imgNotElement.classList.add("rounded");
-
-    const textCarritoVacio = document.createElement("p");
-    textCarritoVacio.textContent = "¡Carrito vacío!";
-    textCarritoVacio.classList.add(...["fw-semibold", "fs-3"]);
-
-    const secondaryText = document.createElement("p");
-    secondaryText.textContent = "¡Selecciona uno o más de nuestros servicios para continuar con la compra!";
-
-    divContenedorCentral.appendChild(imgNotElement);
-    divContenedorCentral.appendChild(textCarritoVacio);
-    divContenedorCentral.appendChild(secondaryText);
-    return divContenedorCentral;
-}
-
-// Limpia los elementos del modal-body para actualizar info
-const cleanModalContent = () => {
-    while (modalCarritoBody.hasChildNodes() && modalCarritoBody.firstElementChild){
-        modalCarritoBody.removeChild(modalCarritoBody.firstElementChild);
-    }    
-}
-
-// Elementos 'precio total' y botón limpiar carrito
-const cleanCartAndTotalPriceElements = (list) => {
-    const divContainer = document.createElement("div");
-    divContainer.classList.add(...["d-flex", "flex-row", "align-items-center", "justify-content-between"]);
-    divContainer.id = "container-totalprice-cleancart";
-    const pElementTotalPrice = document.createElement("p");
-    let total = 0;
-    if (list.length > 0){
-        list.forEach(servicio => {
-            total += servicio.precio * servicio.cantidad;
-        });
-    }
-    pElementTotalPrice.textContent = `Total: $${total}`;
-    pElementTotalPrice.classList.add(...["text-center", "fw-semibold", "fs-5", "mt-3"]);
-    
-    divContainer.appendChild(pElementTotalPrice);
-
-    const divContainerCleanCart = document.createElement("div");
-    divContainerCleanCart.classList.add("tooltip-container");
-    const spanCleanCart = document.createElement("span");
-    spanCleanCart.classList.add("tooltip-text");
-    spanCleanCart.textContent = "Limpiar el carrito";
-
-    const imgCleanCart = document.createElement("img");
-    imgCleanCart.src = "../assets/svg/trash-can.svg";
-    imgCleanCart.id = "limpiar-carrito";
-    imgCleanCart.alt = "limpiar carrito";
-    imgCleanCart.classList.add("icon-limpiar-carrito");
-    imgCleanCart.addEventListener("click", btnLimpiarCarritoHandle);
-
-    divContainerCleanCart.appendChild(spanCleanCart);
-    divContainerCleanCart.appendChild(imgCleanCart);
-
-    divContainer.appendChild(divContainerCleanCart);
-
-    return divContainer;
-}
-
-// Genera un elemento-carrito
-const elementoCarritoElement = (service) => {
-    const divElementoCarrito = document.createElement("div");
-    divElementoCarrito.classList.add("elemento-carrito");
-
-    const imgElementoCarrito = document.createElement("img");
-    imgElementoCarrito.src = `../assets/${service.imgSrc}`;
-    imgElementoCarrito.alt = `${service.nombre}}`;
-    imgElementoCarrito.classList.add("img-item-carrito");
-
-    const divContenedorInfoElemento = document.createElement("div");
-    divContenedorInfoElemento.classList.add(...["d-flex", "flex-column", "gap-1"]);
-
-    const pElementInfoElemento = document.createElement("p");
-    pElementInfoElemento.textContent = `${service.nombre}`;
-    pElementInfoElemento.classList.add("fw-semibold");
-
-    divContenedorInfoElemento.appendChild(pElementInfoElemento);
-
-    // Buen nombre?
-    const divContenedorPaginationInfoElemento = document.createElement("div");
-    divContenedorPaginationInfoElemento.classList.add(...["d-flex", "gap-3"]);
-
-    const ulPagination = document.createElement("ul");
-    ulPagination.classList.add(...["pagination", "pagination-sm"]);
-    ulPagination.id = `item-list-id-${service.id}`;
-
-    // Esto lo hago así para evitar líneas innecesarias de código
-    ulPagination.innerHTML = `<li class="page-item"><p class="page-link remove-item">-</p></li>
-    <li class="page-item"><p class="page-link disabled">${service.cantidad}</p></li>
-    <li class="page-item"><p class="page-link add-item">+</p></li>`;
-
-    const pPricePagination = `<p>Precio: <span class="text-success">$${service.precio}</span></p>`;
-
-    divContenedorPaginationInfoElemento.appendChild(ulPagination);
-    divContenedorPaginationInfoElemento.innerHTML += pPricePagination;
-
-    divContenedorInfoElemento.appendChild(divContenedorPaginationInfoElemento);
-    divElementoCarrito.appendChild(divContenedorInfoElemento);
-    divElementoCarrito.appendChild(imgElementoCarrito);
-
-    return divElementoCarrito;
-}
-
 // Manejo del evento click del botón 'limpiar carrito'
 const btnLimpiarCarritoHandle = () => {
     Swal.fire({
@@ -284,10 +154,10 @@ const btnLimpiarCarritoHandle = () => {
         confirmButtonColor: "#d24242"
     }).then(response => {
         if (response.isConfirmed){
-            cleanModalContent();
+            cleanChildNodes(modalCarritoBody);
             modalCarritoBody.innerHTML = `<div id="contenedor-spinner" class="d-flex justify-content-center"><img src="../assets/svg/tube-spinner.svg" class="spinner" alt="spinner"></div>`;
             setTimeout(() => {
-                cleanModalContent();
+                cleanChildNodes(modalCarritoBody);
                 modalCarritoBody.appendChild(notElementsOnCart());
                 btnModalCarritoComprar.classList.add("disabled");
                 listaCarritoDeCompras.length = 0;
@@ -299,9 +169,7 @@ const btnLimpiarCarritoHandle = () => {
 
 // Manejo del evento click del botón 'Iniciar compra'
 btnModalCarritoComprar.addEventListener("click", (e) => {
-    if (!e.target.classList.contains(".disabled")){
-        window.location.href = "./shopping.html";
-    }
+    if (!e.target.classList.contains(".disabled")) window.location.href = "./shopping.html";
 })
 
 // Chequea el array del localStorage
@@ -310,11 +178,11 @@ const checkElementslocalStorage =  () => {
         modalCarritoBody.appendChild(notElementsOnCart());
         btnModalCarritoComprar.classList.add("disabled");
     } else{
-        cleanModalContent();
+        cleanChildNodes(modalCarritoBody);
         listaCarritoDeCompras.forEach((servicio) => {
-            modalCarritoBody.appendChild(elementoCarritoElement(servicio));
+            modalCarritoBody.appendChild(elementCarrito(servicio));
         });
-        modalCarritoBody.appendChild(cleanCartAndTotalPriceElements(listaCarritoDeCompras));
+        modalCarritoBody.appendChild(cleanCartAndTotalPriceElements(listaCarritoDeCompras, btnLimpiarCarritoHandle));
     }
 }
 

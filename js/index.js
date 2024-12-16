@@ -1,32 +1,14 @@
 /* Sección para navbar sticky effect */
-window.onscroll = () => toggleSticky();
+import { toggleSticky } from "./utils/navbarSticky.js";
+import { handleOffCanvasClick } from "./utils/offcanvasClick.js";
 
 const navbar = document.querySelector(".navbar");
 let sticky = navbar.offsetTop;
+window.onscroll = () => toggleSticky(navbar, sticky);
 
-const toggleSticky = () => {
-    window.scrollY >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
-
-/* Sección para control de eventos */
-const offcanvas_btnInicio = document.querySelector("#offcBtnInicio");
-const offcanvas_btnRecetas = document.querySelector("#offcBtnRecetas");
-const offcanvas_btnContacto = document.querySelector("#offcBtnContacto");
-const offcanvas_btnAboutUs = document.querySelector("#offcBtnAcercaDe");
-const offcanvas_btnServicios = document.querySelector("#offcBtnServicios");
-
-offcanvas_btnInicio.addEventListener("click", () => {
-    window.location.href = "./index.html";
-});
-offcanvas_btnRecetas.addEventListener("click", () => {
-    window.location.href = "./pages/recetas.html";
-});
-offcanvas_btnContacto.addEventListener("click", () => {
-    window.location.href = "./pages/contacto.html";
-});
-offcanvas_btnAboutUs.addEventListener("click", () => {
-    window.location.href = "./pages/aboutus.html";
-});
-offcanvas_btnServicios.addEventListener("click", () => {
-    window.location.href = "./pages/servicios.html";
-});
+/* Sección para control de eventos click de offcanvas */
+document.querySelector("#offcBtnInicio").addEventListener("click", () => handleOffCanvasClick("./index.html"));
+document.querySelector("#offcBtnRecetas").addEventListener("click", () => handleOffCanvasClick("./pages/recetas.html"));
+document.querySelector("#offcBtnContacto").addEventListener("click", () => handleOffCanvasClick("./pages/contacto.html"));
+document.querySelector("#offcBtnAcercaDe").addEventListener("click", () => handleOffCanvasClick("./pages/aboutus.html"));
+document.querySelector("#offcBtnServicios").addEventListener("click", () => handleOffCanvasClick("./pages/servicios.html"));

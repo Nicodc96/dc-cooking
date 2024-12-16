@@ -1,4 +1,4 @@
-import { createElementCustom } from "./elementos.js"
+import { createElementCustom } from "./utils/elementos.js"
 
 const svgDuracion = (duracion) => {
     return `

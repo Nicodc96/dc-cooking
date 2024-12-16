@@ -1,42 +1,24 @@
 /* Sección para navbar sticky effect */
-window.onscroll = () => toggleSticky();
+import { toggleSticky } from "./utils/navbarSticky.js";
+import { handleOffCanvasClick } from "./utils/offcanvasClick.js";
+import { contenedorModales } from "./modals.js";
+import { crearModal, createElementCustom } from "./utils/elementos.js";
 
 const navbar = document.querySelector(".navbar");
 let sticky = navbar.offsetTop;
 
-const toggleSticky = () => {
-    window.scrollY >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
-/* ---------------------------------- */
+window.onscroll = () => toggleSticky(navbar, sticky);
 
-/* Sección para control de eventos */
-const offcanvas_btnInicioR = document.querySelector("#offcBtnInicioR");
-const offcanvas_btnRecetasR = document.querySelector("#offcBtnRecetasR");
-const offcanvas_btnContactoR = document.querySelector("#offcBtnContactoR");
-const offcanvas_btnAboutUsR = document.querySelector("#offcBtnAcercaDeR");
-const offcanvas_btnServiciosR = document.querySelector("#offcBtnServiciosR");
-
-offcanvas_btnInicioR.addEventListener("click", () => {
-    window.location.href = "../index.html";
-});
-offcanvas_btnRecetasR.addEventListener("click", () => {
-    window.location.href = "./recetas.html";
-});
-offcanvas_btnContactoR.addEventListener("click", () => {
-    window.location.href = "./contacto.html";
-});
-offcanvas_btnAboutUsR.addEventListener("click", () => {
-    window.location.href = "./aboutus.html";
-});
-offcanvas_btnServiciosR.addEventListener("click", () => {
-    window.location.href = "./servicios.html";
-});
-/* ---------------------------------- */
+/* Sección para control de eventos click de offcanvas */
+document.querySelector("#offcBtnInicioR").addEventListener("click", () => handleOffCanvasClick("../index.html"));
+document.querySelector("#offcBtnRecetasR").addEventListener("click", () => handleOffCanvasClick("./recetas.html"));
+document.querySelector("#offcBtnContactoR").addEventListener("click", () => handleOffCanvasClick("./contacto.html"));
+document.querySelector("#offcBtnAcercaDeR").addEventListener("click", () => handleOffCanvasClick("./aboutus.html"));
+document.querySelector("#offcBtnServiciosR").addEventListener("click", () => handleOffCanvasClick("./servicios.html"));
 
 /* Sección lógica para cards */
-import { contenedorModales } from "./modals.js";
-import { crearModal, createElementCustom } from "./elementos.js";
 const contenedorCardsRecetas = document.querySelector("#contenedor-cards-recetas");
+
 /*
     Abajo lo que hago es utilizar un div escrito en el HTML para
     anclar mis elementos creados dinámicamente. No es la manera más elegante ni reutilizable
@@ -51,8 +33,6 @@ contenedorCardsRecetas.appendChild(crearModal(5, contenedorModales[4](), "Tarta 
 contenedorCardsRecetas.appendChild(crearModal(6, contenedorModales[5](), "Pastafrola de batata"));
 contenedorCardsRecetas.appendChild(crearModal(7, contenedorModales[6](), "Guiso de lentejas"));
 contenedorCardsRecetas.appendChild(crearModal(8, contenedorModales[7](), "Filet de merluza"));
-
-/* ---------------------------------- */
 
 /* Seccion para zoom de imagenes */
 const modalPasosRecetaBootstrap = new bootstrap.Modal("#modal-pasos-recetas", { keyboard: false });
@@ -72,6 +52,7 @@ window.addEventListener("click", (e) => {
         while (!/^(modal-receta-.*[1-9])$/.test(modalRecetaPadre.id)){
             modalRecetaPadre = modalRecetaPadre.parentNode;
         }
+
         if (modalPasosRecetaBody.firstElementChild){
             modalPasosRecetaBody.removeChild(modalPasosRecetaBody.firstElementChild);
         }
