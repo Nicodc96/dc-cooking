@@ -12,3 +12,21 @@ document.querySelector("#offcBtnRecetas").addEventListener("click", () => handle
 document.querySelector("#offcBtnContacto").addEventListener("click", () => handleOffCanvasClick("./pages/contacto.html"));
 document.querySelector("#offcBtnAcercaDe").addEventListener("click", () => handleOffCanvasClick("./pages/aboutus.html"));
 document.querySelector("#offcBtnServicios").addEventListener("click", () => handleOffCanvasClick("./pages/servicios.html"));
+
+// Carga posterior a renderizado de html
+
+const hideImagesAfterLoad = () => {
+    document.querySelector(".comida-ita").src = "./assets/comida-italiana.webp";
+    document.querySelector(".comida-fran").src = "./assets/comida-francesa.webp";
+    document.querySelector(".comida-arg").src = "./assets/comidas-argentinas.webp";
+    document.querySelector("#offcanvasBody").style.backgroundImage = "url('../assets/food-bg1.webp')";
+}
+
+const loadYoutubeVideo = () => {
+    const containerYtVideo = document.querySelector("#container-youtube-video");
+
+    containerYtVideo.innerHTML = `<iframe src="https://www.youtube.com/embed/ht13rSe4_Go?si=WuQXcXPywCc1vNaz" loading="lazy" title="YouTube video player"></iframe>`;
+}
+
+hideImagesAfterLoad();
+loadYoutubeVideo();
