@@ -236,13 +236,6 @@
     }
 }
 
-@media screen and (width <= 425px){
-    #header-image{
-        background-size: cover;
-        background-image: url("../assets/bg-header-tiny.webp");
-    }
-}
-
 @media screen and (width <= 415px){
     #main-cards > div{
         max-width: 80vw;
