@@ -94,7 +94,9 @@ const handleClickConfirm = (event) => {
             const resumenCarrito = document.querySelector("#info-carrito");
             let cartContentForm = "";
             listaCarritoDeCompras.forEach(servicio => {
-                cartContentForm += `${servicio.nombre} (x${servicio.cantidad}) - $${servicio.precio * servicio.cantidad}\n`;
+                if (servicio.cantidad > 0){
+                    cartContentForm += `${servicio.nombre} (x${servicio.cantidad}) - $${servicio.precio * servicio.cantidad}\n`;
+                }
             });
             cartContentForm += `Total: $${precioTotalNum(listaCarritoDeCompras)}`;
 
@@ -232,7 +234,9 @@ const cargarElementosResumen = () => {
         setTimeout(() => {
             cleanChildNodes(contenedorResumen);
             listaCarritoDeCompras.forEach((servicio) => {
-                contenedorResumen.appendChild(elementoResumen(servicio));
+                if (servicio.cantidad > 0){
+                    contenedorResumen.appendChild(elementoResumen(servicio));
+                }
             });
             contenedorResumen.appendChild(totalResumen(listaCarritoDeCompras));
         }, 1000);
